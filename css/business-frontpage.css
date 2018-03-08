@@ -17,11 +17,34 @@ body {
 .business-header{
   height: 50vh;
   min-height: 300px;
-  background: url('../img/madrid-2111814_1920.jpg') center center no-repeat scroll;
+  /* background: url('../img/madrid-2111814_1920.jpg') center center no-repeat scroll;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+}
+
+.top-slider{
+    height: 55vh;
+    width: 100%;
+    min-height: 300px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow:hidden;
+}
+
+.slider-caption{
+    position:absolute;
+    top:15vh;
+    left:7.5%;
+    width: 85%;
+    z-index:0;
+    background-color:rgba(125,125,125,0.6);
+    font-size:50px;
+    color:#ffffff;
+    line-height:60px;
+    text-align:center;
 }
 
 .card {
