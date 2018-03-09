@@ -5,78 +5,96 @@
  */
 
 body {
-  padding-top: 54px;
+    padding-top: 54px;
 }
 
 @media (min-width: 992px) {
-  body {
-    padding-top: 56px;
-  }
+    body {
+        padding-top: 56px;
+    }
 }
 
-.business-header{
-  height: 50vh;
-  min-height: 300px;
-  /* background: url('../img/madrid-2111814_1920.jpg') center center no-repeat scroll;*/
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+.business-header {
+    height: 50vh;
+    min-height: 300px;
 }
 
-.top-slider{
+.top-slider {
     height: 55vh;
     width: 100%;
     min-height: 300px;
     position: absolute;
     top: 0px;
     left: 0px;
-    overflow:hidden;
+    overflow: hidden;
 }
 
-.slider-caption{
-    position:absolute;
-    top:20vh;
-    left:7.5%;
+.slider-caption {
+    position: absolute;
+    top: 20vh;
+    left: 7.5%;
     width: 85%;
-    z-index:0;
-    background-color:rgba(125,125,125,0.6);
-    font-size:50px;
-    color:#ffffff;
-    line-height:60px;
-    text-align:center;
+    z-index: 0;
+    background-color: rgba(125, 125, 125, 0.6);
+    font-size: 50px;
+    color: #ffffff;
+    line-height: 60px;
+    text-align: center;
 }
 
-.slider-caption-md{
-    position:absolute;
-    top:15vh;
-    left:7.5%;
+.slider-caption-md {
+    position: absolute;
+    top: 15vh;
+    left: 7.5%;
     width: 85%;
-    z-index:0;
-    background-color:rgba(125,125,125,0.6);
-    font-size:45px;
-    color:#ffffff;
-    line-height:45px;
-    text-align:center;
+    z-index: 0;
+    background-color: rgba(125, 125, 125, 0.6);
+    font-size: 45px;
+    color: #ffffff;
+    line-height: 45px;
+    text-align: center;
 }
 
-.slider-caption-xs{
-    position:absolute;
-    top:15vh;
-    left:7.5%;
+.slider-caption-xs {
+    position: absolute;
+    top: 15vh;
+    left: 7.5%;
     width: 85%;
-    z-index:0;
-    background-color:rgba(125,125,125,0.6);
-    font-size:30px;
-    color:#ffffff;
-    line-height:30px;
-    text-align:center;
+    z-index: 0;
+    background-color: rgba(125, 125, 125, 0.6);
+    font-size: 30px;
+    color: #ffffff;
+    line-height: 30px;
+    text-align: center;
+}
+
+.sticky-dates-sm {
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 9999;
+    top: 7vh;
+}
+
+.important-dates {
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+    margin: auto;
+    font-size: 13px
+}
+
+.sticky-dates-lg {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5vh;
+    padding: 2px
 }
 
 .card {
-  height: 100%;
+    height: 100%;
 }
 
 .dropdown:hover .dropdown-menu {
-display: block;
+    display: block;
 }
