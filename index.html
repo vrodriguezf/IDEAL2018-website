@@ -223,18 +223,19 @@
     <!-- Jssor slider -->
     <script src="js/thrid-parties/jssor.slider.min.js"></script>
     <script>
-        var options = {
-            $AutoPlay: 1,
-            $Idle: 4000,
-            $FillMode: 2,
-            $ArrowNavigatorOptions: {
-                $Class: $JssorArrowNavigator$
-            }
-        };
-        var jssor_1_slider = new $JssorSlider$("jssor_1", options);
+        jQuery(document).ready(function($) {
+            var options = {
+                $AutoPlay: 1,
+                $Idle: 4000,
+                $FillMode: 2,
+                $ArrowNavigatorOptions: {
+                    $Class: $JssorArrowNavigator$
+                }
+            };
+            var jssor_1_slider = new $JssorSlider$("jssor_1", options);
 
+        });
     </script>
-
 </body>
 
 </html>
