@@ -93,6 +93,18 @@ body {
     text-align: center;
 }
 
+.attraction {
+    margin-right: 50px;
+}
+
+.header-ref {
+    font-size: 2.5vh;
+}
+
+.header-ref:hover {
+    text-decoration: none
+}
+
 .sticky-dates-lg {
     position: -webkit-sticky;
     position: sticky;
