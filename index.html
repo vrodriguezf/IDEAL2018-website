@@ -55,71 +55,88 @@
         <div class="container">
             <a class="navbar-brand" ui-sref="main">IDEAL 2018 @ Madrid</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
                     <!--
             <li class="nav-item active">
               <a class="nav-link" href="#main">Main
                 <span class="sr-only">(current)</span>
               </a>
             </li>
-          -->
+        -->
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" role="menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Main
-              </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" ui-sref="main({'#': 'callForPapers'})">Call For Papers</a>
-                            <a class="dropdown-item" ui-sref="main({'#': 'instructionsForAuthors'})">Instructions for Authors</a>
-                            <a class="dropdown-item" ui-sref="main({'#': 'callForWS-SS'})">Call for Workshops and Special Sessions</a>
-                            <a class="dropdown-item" ui-sref="main({'#': 'paperFormatAndReviewProcess'})">Paper format and review process</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Content
-              </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" ui-sref="content({'#': 'programme'})">Programme</a>
-                            <a class="dropdown-item" ui-sref="content({'#': 'plenaryTalks'})">Plenary Talks</a>
-                            <a class="dropdown-item" ui-sref="content({'#': 'panelDiscussion'})">Panel Discussion</a>
-                            <a class="dropdown-item" ui-sref="content({'#': 'tutorials'})">Tutorials</a>
-                            <a class="dropdown-item" ui-sref="content({'#': 'workshops'})">Workshops</a>
-                            <a class="dropdown-item" ui-sref="content({'#': 'specialSessions'})">Special Sessions</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                About
-              </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" ui-sref="about({'#': 'registration'})">Registration</a>
-                            <a class="dropdown-item" ui-sref="about({'#': 'venue'})">Venue</a>
-                            <a class="dropdown-item" ui-sref="about({'#': 'accomodation'})">Accomodation</a>
-                            <a class="dropdown-item" ui-sref="about({'#': 'travel'})">Travel</a>
-                            <a class="dropdown-item" ui-sref="about({'#': 'visa'})">Visa</a>
-                            <a class="dropdown-item" ui-sref="about({'#': 'localAttractions'})">Local Attractions</a>
-                        </div>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="cogressOrganization" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Organization
-              </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" ui-sref="organization({'#': 'organizingCommittee'})">Organizing Committee</a>
-                            <a class="dropdown-item" ui-sref="organization({'#': 'sponsors'})">Sponsors</a>
-                            <a class="dropdown-item" ui-sref="organization({'#': 'contact'})">Contact</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" ui-sref="previousEvents">Previous Events</a>
-                    </li>
-                </ul>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" role="menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Calls
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" ui-sref="main({'#': 'callForPapers'})">Call For Papers</a>
+                <a class="dropdown-item" ui-sref="main({'#': 'instructionsForAuthors'})">Instructions for Authors</a>
+                <a class="dropdown-item" ui-sref="main({'#': 'callForWS-SS'})">Call for Workshops and Special Sessions</a>
+                <a class="dropdown-item" ui-sref="main({'#': 'paperFormatAndReviewProcess'})">Paper format and review process</a>
             </div>
-    </nav>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Content
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" ui-sref="content({'#': 'programme'})">Programme</a>
+                <a class="dropdown-item" ui-sref="content({'#': 'plenaryTalks'})">Plenary Talks</a>
+                <a class="dropdown-item" ui-sref="content({'#': 'panelDiscussion'})">Panel Discussion</a>
+                <a class="dropdown-item" ui-sref="content({'#': 'tutorials'})">Tutorials</a>
+                <a class="dropdown-item" ui-sref="content({'#': 'workshops'})">Workshops</a>
+                <a class="dropdown-item" ui-sref="content({'#': 'specialSessions'})">Special Sessions</a>
+                <a class="dropdown-item" ui-sref="content({'#': 'bestPaperAwards'})">Special Sessions</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Publication
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" ui-sref="publication({'#': 'paperSubmission'})">
+                    Paper Submission
+                </a>
+                <a class="dropdown-item" ui-sref="publication({'#': 'indexing'})">
+                    Indexing
+                </a>
+                <a class="dropdown-item" ui-sref="publication({'#': 'journalIssues'})">
+                    Journal Issues
+                </a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                About
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" ui-sref="about({'#': 'registration'})">Registration</a>
+                <a class="dropdown-item" ui-sref="about({'#': 'venue'})">Venue</a>
+                <a class="dropdown-item" ui-sref="about({'#': 'accomodation'})">Accomodation</a>
+                <a class="dropdown-item" ui-sref="about({'#': 'travel'})">Travel</a>
+                <a class="dropdown-item" ui-sref="about({'#': 'visa'})">Visa</a>
+                <a class="dropdown-item" ui-sref="about({'#': 'localAttractions'})">Local Attractions</a>
+            </div>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="cogressOrganization" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Organization
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" ui-sref="organization({'#': 'organizingCommittee'})">Organizing Committee</a>
+                <a class="dropdown-item" ui-sref="organization({'#': 'sponsors'})">Sponsors</a>
+                <a class="dropdown-item" ui-sref="organization({'#': 'contact'})">Contact</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" ui-sref="previousEvents">Previous Events</a>
+        </li>
+    </ul>
+</div>
+</nav>
 
     <!-- Header with Background Image -->
     <header class="business-header bg-dark">
@@ -187,6 +204,7 @@
         </div>
         <div class="row">
             <div class="col-md-8 col-xs-12">
+                <!-- HERE THE CONTENT IS INJECTED -->
                 <div ui-view></div>
             </div>
             <div class="d-none d-md-block col-md-4">
@@ -217,7 +235,11 @@
     <!-- Footer -->
     <footer class="py-3 bg-dark">
         <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; 2018 AIDA</p>
+            <p class="m-0 text-center text-white">
+                Copyright &copy; 2018 AIDA </br>
+                Tel/Fax: +34 914972288 </br>
+                E-mail: <a href="mailto:ideal2018@uam.es">ideal2018@uam.es</a>
+            </p>
         </div>
         <!-- /.container -->
     </footer>
