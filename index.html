@@ -13,16 +13,21 @@
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- Custom styles for this template -->
     <link href="css/business-frontpage.css" rel="stylesheet">
-    
+
     <!-- Bootstrap core JavaScript -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
-    <!-- local javascript -->
-    <script src="js/ajax_load.js" type="text/jscript"></script>
+
+    <!-- Custom JS imports -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="vendor/ui-router-min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
 
     <!-- Jssor slider -->
     <script src="js/thrid-parties/jssor.slider.min.js"></script>
@@ -37,9 +42,8 @@
                 }
             };
             var jssor_1_slider = new $JssorSlider$("jssor_1", options);
-            
-            load_html("main", "./pages/home.html")
         });
+
     </script>
 
 </head>
@@ -48,14 +52,14 @@
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" ui-sref="main">IDEAL 2018 @ Madrid</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="container">
+            <a class="navbar-brand" ui-sref="main">IDEAL 2018 @ Madrid</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-          <!--
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <!--
             <li class="nav-item active">
               <a class="nav-link" href="#main">Main
                 <span class="sr-only">(current)</span>
@@ -63,58 +67,58 @@
             </li>
           -->
 
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" role="menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Main
               </a>
-              <div class="dropdown-menu"  aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" ui-sref="main({'#': 'callForPapers'})">Call For Papers</a>
-                <a class="dropdown-item" ui-sref="main({'#': 'instructionsForAuthors'})">Instructions for Authors</a>
-                <a class="dropdown-item" ui-sref="main({'#': 'callForWS-SS'})">Call for Workshops and Special Sessions</a>
-                <a class="dropdown-item" ui-sref="main({'#': 'paperFormatAndReviewProcess'})">Paper format and review process</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" ui-sref="main({'#': 'callForPapers'})">Call For Papers</a>
+                            <a class="dropdown-item" ui-sref="main({'#': 'instructionsForAuthors'})">Instructions for Authors</a>
+                            <a class="dropdown-item" ui-sref="main({'#': 'callForWS-SS'})">Call for Workshops and Special Sessions</a>
+                            <a class="dropdown-item" ui-sref="main({'#': 'paperFormatAndReviewProcess'})">Paper format and review process</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Content
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" ui-sref="content({'#': 'programme'})">Programme</a>
-                <a class="dropdown-item" ui-sref="content({'#': 'plenaryTalks'})">Plenary Talks</a>
-                <a class="dropdown-item" ui-sref="content({'#': 'panelDiscussion'})">Panel Discussion</a>
-                <a class="dropdown-item" ui-sref="content({'#': 'tutorials'})">Tutorials</a>
-                <a class="dropdown-item" ui-sref="content({'#': 'workshops'})">Workshops</a>
-                <a class="dropdown-item" ui-sref="content({'#': 'specialSessions'})">Special Sessions</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" ui-sref="content({'#': 'programme'})">Programme</a>
+                            <a class="dropdown-item" ui-sref="content({'#': 'plenaryTalks'})">Plenary Talks</a>
+                            <a class="dropdown-item" ui-sref="content({'#': 'panelDiscussion'})">Panel Discussion</a>
+                            <a class="dropdown-item" ui-sref="content({'#': 'tutorials'})">Tutorials</a>
+                            <a class="dropdown-item" ui-sref="content({'#': 'workshops'})">Workshops</a>
+                            <a class="dropdown-item" ui-sref="content({'#': 'specialSessions'})">Special Sessions</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 About
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" ui-sref="about({'#': 'registration'})">Registration</a>
-                <a class="dropdown-item" ui-sref="about({'#': 'venue'})">Venue</a>
-                <a class="dropdown-item" ui-sref="about({'#': 'accomodation'})">Accomodation</a>
-                <a class="dropdown-item" ui-sref="about({'#': 'travel'})">Travel</a>
-                <a class="dropdown-item" ui-sref="about({'#': 'visa'})">Visa</a>
-                <a class="dropdown-item" ui-sref="about({'#': 'localAttractions'})">Local Attractions</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" id="cogressOrganization" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" ui-sref="about({'#': 'registration'})">Registration</a>
+                            <a class="dropdown-item" ui-sref="about({'#': 'venue'})">Venue</a>
+                            <a class="dropdown-item" ui-sref="about({'#': 'accomodation'})">Accomodation</a>
+                            <a class="dropdown-item" ui-sref="about({'#': 'travel'})">Travel</a>
+                            <a class="dropdown-item" ui-sref="about({'#': 'visa'})">Visa</a>
+                            <a class="dropdown-item" ui-sref="about({'#': 'localAttractions'})">Local Attractions</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="cogressOrganization" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Organization
               </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" ui-sref="organization({'#': 'organizingCommittee'})">Organizing Committee</a>
-                <a class="dropdown-item" ui-sref="organization({'#': 'sponsors'})">Sponsors</a>
-                <a class="dropdown-item" ui-sref="organization({'#': 'contact'})">Contact</a>
-              </div>
-            </li>
-          <li class="nav-item">
-            <a class="nav-link" ui-sref="previousEvents">Previous Events</a>
-          </li>
-          </ul>
-        </div>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" ui-sref="organization({'#': 'organizingCommittee'})">Organizing Committee</a>
+                            <a class="dropdown-item" ui-sref="organization({'#': 'sponsors'})">Sponsors</a>
+                            <a class="dropdown-item" ui-sref="organization({'#': 'contact'})">Contact</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" ui-sref="previousEvents">Previous Events</a>
+                    </li>
+                </ul>
+            </div>
     </nav>
 
     <!-- Header with Background Image -->
@@ -162,28 +166,28 @@
     </header>
 
     <!-- Page Content -->
-    <div class="d-md-none row sticky-dates-sm">
-        <div class="important-dates bg-dark">
-            <p behavior="scroll" direction="left" scrollamount="4"><strong>Important dates: </strong> <em>Submission Deadline:</em> 4 June 2018 &#8231;
-                <em>Special Session/ Workshop Proposals Deadline:</em> 8 June 2018 &#8231;
-                <em>Notification of Acceptance:</em> 10 July 2018 &#8231;
-                <em>Camera-Ready Copy Due:</em> 31 July 2018 &#8231;
-                <em>Early Registration:</em> 31 July 2018 &#8231;
-                <em>Conference Presentation:</em> 21-23 Nov. 2018 &#8231;
-            </p>
-    <div class="container">
 
-      <div class="row">
-        <div class="col-sm-8">
-        <div ui-view></div>
-        </div>
-    </div>
     <div class="container">
+        <div class="d-md-none row sticky-dates-sm">
+            <div class="important-dates bg-dark rounded-bottom">
+                <p id="smImportantDates" class="collapse show"><strong>Important dates: </strong> <em>Submission Deadline:</em> 4 June 2018 &#8231;
+                    <em>Special Session/ Workshop Proposals Deadline:</em> 8 June 2018 &#8231;
+                    <em>Notification of Acceptance:</em> 10 July 2018 &#8231;
+                    <em>Camera-Ready Copy Due:</em> 31 July 2018 &#8231;
+                    <em>Early Registration:</em> 31 July 2018 &#8231;
+                    <em>Conference Presentation:</em> 21-23 Nov. 2018 &#8231;
+                </p>
+                <div class="text-center">
+                    <button id="hideButton" class="btn btn-secondary btn-sm" data-toggle="collapse" data-target="#smImportantDates">
+                        <span class="if-not-collapsed"><span class="fa fa-sort-asc"></span>Hide</span>
+                        <span class="if-collapsed"><span class="fa fa-sort-desc"></span>Show</span>
+                    </button>
+                </div>
+            </div>
+        </div>
         <div class="row">
             <div class="col-md-8 col-xs-12">
-                <div class="content" id="main" w3-include-html="pages/home.html">
-                    
-                </div>
+                <div ui-view></div>
             </div>
             <div class="d-none d-md-block col-md-4">
                 <div class="sticky-dates-lg">
@@ -207,7 +211,6 @@
         </div>
         <!-- /.col -->
         <!-- /.row -->
-
     </div>
     <!-- /.container -->
 
@@ -218,33 +221,6 @@
         </div>
         <!-- /.container -->
     </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-    <!-- Custom JS imports -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-    <script src="vendor/ui-router-min.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
-
-    <!-- Jssor slider -->
-    <script src="js/thrid-parties/jssor.slider.min.js"></script>
-    <script>
-        jQuery(document).ready(function($) {
-            var options = {
-                $AutoPlay: 1,
-                $Idle: 4000,
-                $FillMode: 2,
-                $ArrowNavigatorOptions: {
-                    $Class: $JssorArrowNavigator$
-                }
-            };
-            var jssor_1_slider = new $JssorSlider$("jssor_1", options);
-
-        });
-    </script>
 </body>
 
 </html>
