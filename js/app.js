@@ -19,6 +19,11 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
             templateUrl: 'pages/content.html'       
         })
 
+        .state('publication', {
+            url: '/publication',
+            templateUrl: 'pages/publication.html'       
+        })
+
         .state('about', {
             url: '/about',
             templateUrl: 'pages/about.html'       
