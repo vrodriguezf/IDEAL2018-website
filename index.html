@@ -54,10 +54,16 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" ui-sref="main">IDEAL 2018 @ Madrid</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
+            <div class="d-flex flex-row order-2 order-lg-3">
+                <ul class="navbar-nav flex-row">
+                    <li class="nav-item"><a class="nav-link px-2" href="https://twitter.com/IDEAL2018Madrid"><span class="fa fa-facebook"></span></a></li>
+                    <li class="nav-item"><a class="nav-link px-2" href="#"><span class="fa fa-twitter"></span></a></li>
+                </ul>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            </div>
+            <div class="collapse navbar-collapse order-3 order-lg-2" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" role="menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -123,9 +129,7 @@
                             <a class="dropdown-item" ui-sref="organization({'#': 'contact'})">Contact</a>
                         </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" ui-sref="previousEvents">Previous Events</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" ui-sref="previousEvents">Previous Events</a></li>
                 </ul>
             </div>
         </div>
@@ -137,39 +141,69 @@
             <div data-u="slides" class="top-slider">
                 <div>
                     <img data-u="image" src="img/madrid-2111814_1920.jpg" />
-                    <div data-u="caption" class="d-none d-lg-block slider-caption rounded" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
-                    <div data-u="caption" class="d-none d-md-block d-lg-none slider-caption-md rounded"></div>
-                    <div data-u="caption" class="d-md-none slider-caption-xs rounded" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
+
+                    <div data-u="caption" class="d-none d-lg-block slider-caption rounded-top" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
+                    <div data-u="caption" class="d-none d-md-block d-lg-none slider-caption-md rounded-top" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
+                    <div data-u="caption" class="d-md-none slider-caption-xs rounded-top" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
+
+                    <div data-u="caption" class="d-none d-lg-block slider-caption2 rounded-bottom" ng-bind-html="CONSTANTS.DATE_PLACE"></div>
+                    <div data-u="caption" class="d-none d-md-block d-lg-none slider-caption2-md rounded-bottom" ng-bind-html="CONSTANTS.DATE_PLACE"></div>
+                    <div data-u="caption" class="d-md-none slider-caption2-xs rounded-bottom" ng-bind-html="CONSTANTS.DATE_PLACE"></div>
                 </div>
                 <div>
                     <img data-u="image" src="img/spain-2709002_1920.jpg" />
-                    <div data-u="caption" class="d-none d-lg-block slider-caption rounded" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
-                    <div data-u="caption" class="d-none d-md-block d-lg-none slider-caption-md rounded" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
-                    <div data-u="caption" class="d-md-none slider-caption-xs rounded"></div>
+
+                    <div data-u="caption" class="d-none d-lg-block slider-caption rounded-top" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
+                    <div data-u="caption" class="d-none d-md-block d-lg-none slider-caption-md rounded-top" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
+                    <div data-u="caption" class="d-md-none slider-caption-xs rounded-top" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
+
+                    <div data-u="caption" class="d-none d-lg-block slider-caption2 rounded-bottom" ng-bind-html="CONSTANTS.DATE_PLACE"></div>
+                    <div data-u="caption" class="d-none d-md-block d-lg-none slider-caption2-md rounded-bottom" ng-bind-html="CONSTANTS.DATE_PLACE"></div>
+                    <div data-u="caption" class="d-md-none slider-caption2-xs rounded-bottom" ng-bind-html="CONSTANTS.DATE_PLACE"></div>
                 </div>
                 <div>
                     <img data-u="image" src="img/madrid-385104_1920.jpg" />
-                    <div data-u="caption" class="d-none d-lg-block slider-caption rounded" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
-                    <div data-u="caption" class="d-none d-md-block d-lg-none slider-caption-md rounded" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
-                    <div data-u="caption" class="d-md-none slider-caption-xs rounded" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
+
+                    <div data-u="caption" class="d-none d-lg-block slider-caption rounded-top" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
+                    <div data-u="caption" class="d-none d-md-block d-lg-none slider-caption-md rounded-top" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
+                    <div data-u="caption" class="d-md-none slider-caption-xs rounded-top" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
+
+                    <div data-u="caption" class="d-none d-lg-block slider-caption2 rounded-bottom" ng-bind-html="CONSTANTS.DATE_PLACE"></div>
+                    <div data-u="caption" class="d-none d-md-block d-lg-none slider-caption2-md rounded-bottom" ng-bind-html="CONSTANTS.DATE_PLACE"></div>
+                    <div data-u="caption" class="d-md-none slider-caption2-xs rounded-bottom" ng-bind-html="CONSTANTS.DATE_PLACE"></div>
                 </div>
                 <div>
                     <img data-u="image" src="img/madrid-2713916_1920.jpg" />
-                    <div data-u="caption" class="d-none d-lg-block slider-caption rounded" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
-                    <div data-u="caption" class="d-none d-md-block d-lg-none slider-caption-md rounded" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
-                    <div data-u="caption" class="d-md-none slider-caption-xs rounded" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
+
+                    <div data-u="caption" class="d-none d-lg-block slider-caption rounded-top" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
+                    <div data-u="caption" class="d-none d-md-block d-lg-none slider-caption-md rounded-top" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
+                    <div data-u="caption" class="d-md-none slider-caption-xs rounded-top" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
+
+                    <div data-u="caption" class="d-none d-lg-block slider-caption2 rounded-bottom" ng-bind-html="CONSTANTS.DATE_PLACE"></div>
+                    <div data-u="caption" class="d-none d-md-block d-lg-none slider-caption2-md rounded-bottom" ng-bind-html="CONSTANTS.DATE_PLACE"></div>
+                    <div data-u="caption" class="d-md-none slider-caption2-xs rounded-bottom" ng-bind-html="CONSTANTS.DATE_PLACE"></div>
                 </div>
                 <div>
                     <img data-u="image" src="img/madrid-1999645_1920.jpg" />
-                    <div data-u="caption" class="d-none d-lg-block slider-caption rounded" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
-                    <div data-u="caption" class="d-none d-md-block d-lg-none slider-caption-md rounded" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
-                    <div data-u="caption" class="d-md-none slider-caption-xs rounded" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
+
+                    <div data-u="caption" class="d-none d-lg-block slider-caption rounded-top" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
+                    <div data-u="caption" class="d-none d-md-block d-lg-none slider-caption-md rounded-top" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
+                    <div data-u="caption" class="d-md-none slider-caption-xs rounded-top" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
+
+                    <div data-u="caption" class="d-none d-lg-block slider-caption rounded-bottom" ng-bind-html="CONSTANTS.DATE_PLACE"></div>
+                    <div data-u="caption" class="d-none d-md-block d-lg-none slider-caption-md rounded-bottom" ng-bind-html="CONSTANTS.DATE_PLACE"></div>
+                    <div data-u="caption" class="d-md-none slider-caption-xs rounded-bottom" ng-bind-html="CONSTANTS.DATE_PLACE"></div>
                 </div>
                 <div>
                     <img data-u="image" src="img/UAM_POLITECNICA.JPG" />
-                    <div data-u="caption" class="d-none d-lg-block slider-caption rounded" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
-                    <div data-u="caption" class="d-none d-md-block d-lg-none slider-caption-md rounded" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
-                    <div data-u="caption" class="d-md-none slider-caption-xs rounded" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
+
+                    <div data-u="caption" class="d-none d-lg-block slider-caption rounded-top" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
+                    <div data-u="caption" class="d-none d-md-block d-lg-none slider-caption-md rounded-top" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
+                    <div data-u="caption" class="d-md-none slider-caption-xs rounded-top" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
+
+                    <div data-u="caption" class="d-none d-lg-block slider-caption rounded-bottom" ng-bind-html="CONSTANTS.DATE_PLACE"></div>
+                    <div data-u="caption" class="d-none d-md-block d-lg-none slider-caption-md rounded-bottom" ng-bind-html="CONSTANTS.DATE_PLACE"></div>
+                    <div data-u="caption" class="d-md-none slider-caption-xs rounded-bottom" ng-bind-html="CONSTANTS.DATE_PLACE"></div>
                 </div>
             </div>
         </div>
@@ -185,23 +219,35 @@
                     <div ui-view></div>
                 </div>
             </div>
-            <div class="d-none d-md-block col-md-4">
+            <div id="datesPanel" class="d-none d-md-block col-md-4">
                 <div class="sticky-dates-lg">
-                    <h2 class="mt-4">Important dates</h2>
-                    <dl>
-                        <dt>Submission Deadline</dt>
-                        <dd>15 June 2018</dd>
-                        <dt>Special Session/ Workshop Proposals Deadline</dt>
-                        <dd>8 June 2018</dd>
-                        <dt>Notification of Acceptance</dt>
-                        <dd>10 July 2018</dd>
-                        <dt>Camera-Ready Copy Due</dt>
-                        <dd>31 July 2018</dd>
-                        <dt>Early Registration</dt>
-                        <dd>31 July 2018</dd>
-                        <dt>Conference Presentation</dt>
-                        <dd>21-23 Nov. 2018</dd>
-                    </dl>
+                    <div class="card">
+                        <div class="card-header bg-secondary text-white">
+                            Important dates
+                        </div>
+                        <div class="card-body">
+                            <dl>
+                                <dt>Submission Deadline</dt>
+                                <dd>15 June 2018</dd>
+                                <dt>Special Session/ Workshop Proposals Deadline</dt>
+                                <dd>8 June 2018</dd>
+                                <dt>Notification of Acceptance</dt>
+                                <dd>10 July 2018</dd>
+                                <dt>Camera-Ready Copy Due</dt>
+                                <dd>31 July 2018</dd>
+                                <dt>Early Registration</dt>
+                                <dd>31 July 2018</dd>
+                                <dt>Conference Presentation</dt>
+                                <dd>21-23 Nov. 2018</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <a class="twitter-timeline" data-width="450" data-height="280" data-theme="dark" href="https://twitter.com/IDEAL2018Madrid?ref_src=twsrc%5Etfw">Tweets by IDEAL2018Madrid</a>
+                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -19,6 +19,10 @@ body {
     min-height: 300px;
 }
 
+/******************
+ * SLIDER
+ ******************/
+
 .top-slider {
     height: 55vh;
     width: 100%;
@@ -30,49 +34,101 @@ body {
 }
 
 .slider-caption {
-    position: absolute;
-    top: 20vh;
-    left: 7.5%;
-    width: 85%;
+    position: relative;
+    top: 15vh;
+    margin: auto;
     z-index: 0;
     background-color: rgba(125, 125, 125, 0.6);
     font-size: 50px;
     color: #ffffff;
-    line-height: 60px;
+    line-height: 50px;
     text-align: center;
+    width: 80%;
 }
 
 .slider-caption-md {
-    position: absolute;
+    position: relative;
     top: 15vh;
     left: 7.5%;
-    width: 85%;
     z-index: 0;
     background-color: rgba(125, 125, 125, 0.6);
-    font-size: 45px;
+    font-size: 40px;
     color: #ffffff;
-    line-height: 45px;
+    line-height: 40px;
     text-align: center;
+    width: 80%;
 }
 
 .slider-caption-xs {
-    position: absolute;
+    position: relative;
     top: 15vh;
     left: 7.5%;
-    width: 85%;
     z-index: 0;
     background-color: rgba(125, 125, 125, 0.6);
     font-size: 30px;
     color: #ffffff;
     line-height: 30px;
     text-align: center;
+    width: 80%;
 }
+
+.slider-caption2 {
+    position: relative;
+    top: 15vh;
+    margin: auto;
+    z-index: 0;
+    background-color: rgba(125, 125, 125, 0.6);
+    font-size: 45px;
+    color: #ffffff;
+    line-height: 45px;
+    text-align: center;
+    width: 80%;
+}
+
+.slider-caption2-md {
+    position: relative;
+    top: 15vh;
+    left: 7.5%;
+    width: 85%;
+    z-index: 0;
+    background-color: rgba(125, 125, 125, 0.6);
+    font-size: 35px;
+    color: #ffffff;
+    line-height: 35px;
+    text-align: center;
+    width: 80%;
+}
+
+.slider-caption2-xs {
+    position: relative;
+    top: 15vh;
+    left: 7.5%;
+    width: 85%;
+    z-index: 0;
+    background-color: rgba(125, 125, 125, 0.6);
+    font-size: 25px;
+    color: #ffffff;
+    line-height: 25px;
+    text-align: center;
+    width: 80%;
+}
+
+/**********************
+ * Important dates
+ *********************/
 
 .sticky-dates-sm {
     position: -webkit-sticky;
     position: sticky;
     z-index: 9999;
     top: 7vh;
+}
+
+.sticky-dates-lg {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 5.5vh;
+    padding: 2px
 }
 
 .important-dates {
@@ -93,6 +149,26 @@ body {
     text-align: center;
 }
 
+[data-toggle="collapse"].collapsed .if-not-collapsed {
+    display: none;
+}
+
+[data-toggle="collapse"]:not(.collapsed) .if-collapsed {
+    display: none;
+}
+
+#datesPanel .card-header {
+    font-size: 3vh;
+}
+
+#datesPanel {
+    font-size: 1.5vh;
+}
+
+/***********************
+ * Local Atractions
+ ***********************/
+
 .attraction {
     max-width: 400px;
     min-width: 300px;
@@ -111,20 +187,6 @@ body {
     text-decoration: none
 }
 
-.sticky-dates-lg {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 5vh;
-    padding: 2px
-}
-
 .card {
     height: 100%;
-}
-
-[data-toggle="collapse"].collapsed .if-not-collapsed {
-  display: none;
-}
-[data-toggle="collapse"]:not(.collapsed) .if-collapsed {
-  display: none;
 }
