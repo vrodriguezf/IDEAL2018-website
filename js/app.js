@@ -1,7 +1,18 @@
 // app.js
-var routerApp = angular.module('ideal2018', ['ui.router']);
+var app = angular.module('ideal2018', ['ui.router', 'ngSanitize']);
 
-routerApp.config(function($stateProvider, $urlRouterProvider) {
+//Constants
+app.constant('CONSTANTS', {
+    CAROUSEL_TITLE: "The 19th International Conference on Intelligent Data Engineering and Automated Learning </br> (IDEAL 2018)"
+});
+
+//Assign constants to root scope
+app.run(function ($rootScope, CONSTANTS) {
+    $rootScope.CONSTANTS = CONSTANTS;
+});
+
+//States
+app.config(function($stateProvider, $urlRouterProvider) {
 
     $urlRouterProvider.otherwise('/main');
 

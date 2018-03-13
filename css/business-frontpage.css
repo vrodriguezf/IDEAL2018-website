@@ -122,10 +122,6 @@ body {
     height: 100%;
 }
 
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-
 [data-toggle="collapse"].collapsed .if-not-collapsed {
   display: none;
 }
