@@ -59,9 +59,9 @@
                     <li class="nav-item"><a class="nav-link px-2" href="https://www.facebook.com/ideal2018Madrid/"><span class="fa fa-facebook"></span></a></li>
                     <li class="nav-item"><a class="nav-link px-2" href="https://twitter.com/IDEAL2018Madrid"><span class="fa fa-twitter"></span></a></li>
                 </ul>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+                <button id="menuButton" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
             <div class="collapse navbar-collapse order-3 order-lg-2" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto">
@@ -138,72 +138,42 @@
     <!-- Header with Background Image -->
     <header class="business-header bg-dark">
         <div id="jssor_1" class="top-slider">
-            <div data-u="slides" class="top-slider">
+            <div id="slides" data-u="slides" class="top-slider">
                 <div>
                     <img data-u="image" src="img/madrid-2111814_1920.jpg" />
 
-                    <div data-u="caption" class="d-none d-lg-block slider-caption rounded-top" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
-                    <div data-u="caption" class="d-none d-md-block d-lg-none slider-caption-md rounded-top" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
-                    <div data-u="caption" class="d-md-none slider-caption-xs rounded-top" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
-
-                    <div data-u="caption" class="d-none d-lg-block slider-caption2 rounded-bottom" ng-bind-html="CONSTANTS.DATE_PLACE"></div>
-                    <div data-u="caption" class="d-none d-md-block d-lg-none slider-caption2-md rounded-bottom" ng-bind-html="CONSTANTS.DATE_PLACE"></div>
-                    <div data-u="caption" class="d-md-none slider-caption2-xs rounded-bottom" ng-bind-html="CONSTANTS.DATE_PLACE"></div>
+                    <div data-u="caption" class="slider-caption rounded-top" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
+                    <div data-u="caption" class="slider-caption2 rounded-bottom" ng-bind-html="CONSTANTS.DATE_PLACE"></div>
                 </div>
                 <div>
                     <img data-u="image" src="img/spain-2709002_1920.jpg" />
 
-                    <div data-u="caption" class="d-none d-lg-block slider-caption rounded-top" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
-                    <div data-u="caption" class="d-none d-md-block d-lg-none slider-caption-md rounded-top" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
-                    <div data-u="caption" class="d-md-none slider-caption-xs rounded-top" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
-
-                    <div data-u="caption" class="d-none d-lg-block slider-caption2 rounded-bottom" ng-bind-html="CONSTANTS.DATE_PLACE"></div>
-                    <div data-u="caption" class="d-none d-md-block d-lg-none slider-caption2-md rounded-bottom" ng-bind-html="CONSTANTS.DATE_PLACE"></div>
-                    <div data-u="caption" class="d-md-none slider-caption2-xs rounded-bottom" ng-bind-html="CONSTANTS.DATE_PLACE"></div>
+                    <div data-u="caption" class="slider-caption rounded-top" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
+                    <div data-u="caption" class="slider-caption2 rounded-bottom" ng-bind-html="CONSTANTS.DATE_PLACE"></div>
                 </div>
                 <div>
                     <img data-u="image" src="img/madrid-385104_1920.jpg" />
 
-                    <div data-u="caption" class="d-none d-lg-block slider-caption rounded-top" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
-                    <div data-u="caption" class="d-none d-md-block d-lg-none slider-caption-md rounded-top" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
-                    <div data-u="caption" class="d-md-none slider-caption-xs rounded-top" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
-
-                    <div data-u="caption" class="d-none d-lg-block slider-caption2 rounded-bottom" ng-bind-html="CONSTANTS.DATE_PLACE"></div>
-                    <div data-u="caption" class="d-none d-md-block d-lg-none slider-caption2-md rounded-bottom" ng-bind-html="CONSTANTS.DATE_PLACE"></div>
-                    <div data-u="caption" class="d-md-none slider-caption2-xs rounded-bottom" ng-bind-html="CONSTANTS.DATE_PLACE"></div>
+                    <div data-u="caption" class="slider-caption rounded-top" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
+                    <div data-u="caption" class="slider-caption2 rounded-bottom" ng-bind-html="CONSTANTS.DATE_PLACE"></div>
                 </div>
                 <div>
                     <img data-u="image" src="img/madrid-2713916_1920.jpg" />
 
-                    <div data-u="caption" class="d-none d-lg-block slider-caption rounded-top" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
-                    <div data-u="caption" class="d-none d-md-block d-lg-none slider-caption-md rounded-top" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
-                    <div data-u="caption" class="d-md-none slider-caption-xs rounded-top" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
-
-                    <div data-u="caption" class="d-none d-lg-block slider-caption2 rounded-bottom" ng-bind-html="CONSTANTS.DATE_PLACE"></div>
-                    <div data-u="caption" class="d-none d-md-block d-lg-none slider-caption2-md rounded-bottom" ng-bind-html="CONSTANTS.DATE_PLACE"></div>
-                    <div data-u="caption" class="d-md-none slider-caption2-xs rounded-bottom" ng-bind-html="CONSTANTS.DATE_PLACE"></div>
+                    <div data-u="caption" class="slider-caption rounded-top" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
+                    <div data-u="caption" class="slider-caption2 rounded-bottom" ng-bind-html="CONSTANTS.DATE_PLACE"></div>
                 </div>
                 <div>
                     <img data-u="image" src="img/madrid-1999645_1920.jpg" />
 
-                    <div data-u="caption" class="d-none d-lg-block slider-caption rounded-top" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
-                    <div data-u="caption" class="d-none d-md-block d-lg-none slider-caption-md rounded-top" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
-                    <div data-u="caption" class="d-md-none slider-caption-xs rounded-top" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
-
-                    <div data-u="caption" class="d-none d-lg-block slider-caption rounded-bottom" ng-bind-html="CONSTANTS.DATE_PLACE"></div>
-                    <div data-u="caption" class="d-none d-md-block d-lg-none slider-caption-md rounded-bottom" ng-bind-html="CONSTANTS.DATE_PLACE"></div>
-                    <div data-u="caption" class="d-md-none slider-caption-xs rounded-bottom" ng-bind-html="CONSTANTS.DATE_PLACE"></div>
+                    <div data-u="caption" class="slider-caption rounded-top" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
+                    <div data-u="caption" class="slider-caption2 rounded-bottom" ng-bind-html="CONSTANTS.DATE_PLACE"></div>
                 </div>
                 <div>
                     <img data-u="image" src="img/UAM_POLITECNICA.JPG" />
 
-                    <div data-u="caption" class="d-none d-lg-block slider-caption rounded-top" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
-                    <div data-u="caption" class="d-none d-md-block d-lg-none slider-caption-md rounded-top" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
-                    <div data-u="caption" class="d-md-none slider-caption-xs rounded-top" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
-
-                    <div data-u="caption" class="d-none d-lg-block slider-caption rounded-bottom" ng-bind-html="CONSTANTS.DATE_PLACE"></div>
-                    <div data-u="caption" class="d-none d-md-block d-lg-none slider-caption-md rounded-bottom" ng-bind-html="CONSTANTS.DATE_PLACE"></div>
-                    <div data-u="caption" class="d-md-none slider-caption-xs rounded-bottom" ng-bind-html="CONSTANTS.DATE_PLACE"></div>
+                    <div data-u="caption" class="slider-caption rounded-top" ng-bind-html="CONSTANTS.CAROUSEL_TITLE"></div>
+                    <div data-u="caption" class="slider-caption2 rounded-bottom" ng-bind-html="CONSTANTS.DATE_PLACE"></div>
                 </div>
             </div>
         </div>
