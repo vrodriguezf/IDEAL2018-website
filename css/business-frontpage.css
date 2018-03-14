@@ -8,9 +8,186 @@ body {
     padding-top: 54px;
 }
 
+/* Small devices (phones, less than 544px) */
+
+.navbar-brand {
+    font-size: 1.0rem;
+}
+
+.slider-caption {
+    position: relative;
+    top: 15vh;
+    margin: auto;
+    z-index: 0;
+    background-color: rgba(125, 125, 125, 0.6);
+    font-size: 25px;
+    color: #ffffff;
+    line-height: 25px;
+    text-align: center;
+    width: 80%;
+}
+
+.slider-caption2 {
+    position: relative;
+    top: 15vh;
+    margin: auto;
+    z-index: 0;
+    background-color: rgba(125, 125, 125, 0.6);
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 20px;
+    text-align: center;
+    width: 80%;
+}
+
+#menuButton {
+    font-size: 1.0rem;
+}
+
+/* Small devices (landscape phones, 544px and up) */
+
+@media (min-width: 544px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    #menuButton {
+        font-size: 1.2rem;
+    }
+
+    .slider-caption {
+        position: relative;
+        top: 30vh;
+        margin: auto;
+        z-index: 0;
+        background-color: rgba(125, 125, 125, 0.6);
+        font-size: 25px;
+        color: #ffffff;
+        line-height: 25px;
+        text-align: center;
+        width: 80%;
+    }
+
+    .slider-caption2 {
+        position: relative;
+        top: 30vh;
+        margin: auto;
+        z-index: 0;
+        background-color: rgba(125, 125, 125, 0.6);
+        font-size: 20px;
+        color: #ffffff;
+        line-height: 20px;
+        text-align: center;
+        width: 80%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+
+@media (min-width: 768px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    #menuButton {
+        font-size: 1.2rem;
+    }
+
+    .slider-caption {
+        position: relative;
+        top: 15vh;
+        margin: auto;
+        z-index: 0;
+        background-color: rgba(125, 125, 125, 0.6);
+        font-size: 40px;
+        color: #ffffff;
+        line-height: 40px;
+        text-align: center;
+        width: 80%;
+    }
+
+    .slider-caption2 {
+        position: relative;
+        top: 15vh;
+        margin: auto;
+        z-index: 0;
+        background-color: rgba(125, 125, 125, 0.6);
+        font-size: 35px;
+        color: #ffffff;
+        line-height: 35px;
+        text-align: center;
+        width: 80%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+
 @media (min-width: 992px) {
+    .navbar-brand {
+        font-size: 1.4rem;
+    }
     body {
         padding-top: 56px;
+    }
+
+    .slider-caption {
+        position: relative;
+        top: 15vh;
+        margin: auto;
+        z-index: 0;
+        background-color: rgba(125, 125, 125, 0.6);
+        font-size: 50px;
+        color: #ffffff;
+        line-height: 50px;
+        text-align: center;
+        width: 80%;
+    }
+
+    .slider-caption2 {
+        position: relative;
+        top: 15vh;
+        margin: auto;
+        z-index: 0;
+        background-color: rgba(125, 125, 125, 0.6);
+        font-size: 45px;
+        color: #ffffff;
+        line-height: 45px;
+        text-align: center;
+        width: 80%;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    .navbar-brand {
+        font-size: 1.4rem;
+    }
+
+    .slider-caption {
+        position: relative;
+        top: 15vh;
+        margin: auto;
+        z-index: 0;
+        background-color: rgba(125, 125, 125, 0.6);
+        font-size: 50px;
+        color: #ffffff;
+        line-height: 50px;
+        text-align: center;
+        width: 80%;
+    }
+
+    .slider-caption2 {
+        position: relative;
+        top: 15vh;
+        margin: auto;
+        z-index: 0;
+        background-color: rgba(125, 125, 125, 0.6);
+        font-size: 45px;
+        color: #ffffff;
+        line-height: 45px;
+        text-align: center;
+        width: 80%;
     }
 }
 
@@ -33,18 +210,7 @@ body {
     overflow: hidden;
 }
 
-.slider-caption {
-    position: relative;
-    top: 15vh;
-    margin: auto;
-    z-index: 0;
-    background-color: rgba(125, 125, 125, 0.6);
-    font-size: 50px;
-    color: #ffffff;
-    line-height: 50px;
-    text-align: center;
-    width: 80%;
-}
+
 
 .slider-caption-md {
     position: relative;
@@ -68,19 +234,6 @@ body {
     font-size: 30px;
     color: #ffffff;
     line-height: 30px;
-    text-align: center;
-    width: 80%;
-}
-
-.slider-caption2 {
-    position: relative;
-    top: 15vh;
-    margin: auto;
-    z-index: 0;
-    background-color: rgba(125, 125, 125, 0.6);
-    font-size: 45px;
-    color: #ffffff;
-    line-height: 45px;
     text-align: center;
     width: 80%;
 }
@@ -141,14 +294,6 @@ body {
     width: 100vw;
 }
 
-#hideButton {
-    margin-bottom: 5px;
-    height: 3vh;
-    font-size: 1.5vh;
-    line-height: 1.5vh;
-    text-align: center;
-}
-
 [data-toggle="collapse"].collapsed .if-not-collapsed {
     display: none;
 }
@@ -163,6 +308,14 @@ body {
 
 #datesPanel {
     font-size: 1.5vh;
+}
+
+#hideButton {
+    margin-bottom: 5px;
+    height: 25px;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
 }
 
 /***********************
