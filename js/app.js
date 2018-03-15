@@ -3,7 +3,7 @@ var app = angular.module('ideal2018', ['ui.router', 'ngSanitize']);
 
 //Constants
 app.constant('CONSTANTS', {
-    CAROUSEL_TITLE: "The 19th International Conference on Intelligent Data Engineering and Automated Learning </br> (IDEAL 2018)",
+    CAROUSEL_TITLE: "The 19th International Conference on Intelligent Data Engineering and Automated Learning </br> IDEAL 2018",
     DATE_PLACE: "21-23 November, Madrid, Spain"
 });
 
