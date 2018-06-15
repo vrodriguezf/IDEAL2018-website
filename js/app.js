@@ -10,10 +10,26 @@ app.constant('CONSTANTS', {
 //Assign constants to root scope
 app.run(function ($rootScope, CONSTANTS) {
     $rootScope.CONSTANTS = CONSTANTS;
+
+    // this function run after a page have been loaded
+    $rootScope.$on('$viewContentLoaded', function (event, view) {
+        // if the page is content.html then load the events to change the arrows icons
+        if (view && view.viewDecl.templateUrl == "pages/content.html") {
+            $('.icon-toogleable').click(function () {
+                icon = $(this).find(".icon-to-toogle .fa")
+
+                if (icon.hasClass("fa fa-level-down")) {
+                    icon.removeClass("fa fa-level-down").addClass("fa fa-level-up")
+                } else if (icon.hasClass("fa fa-level-up")) {
+                    icon.removeClass("fa fa-level-up").addClass("fa fa-level-down")
+                }
+            });
+        }
+    });
 });
 
 //States
-app.config(function($stateProvider, $urlRouterProvider) {
+app.config(function ($stateProvider, $urlRouterProvider) {
 
     $urlRouterProvider.otherwise('/main');
 
@@ -28,28 +44,30 @@ app.config(function($stateProvider, $urlRouterProvider) {
         // ABOUT PAGE AND MULTIPLE NAMED VIEWS =================================
         .state('content', {
             url: '/content',
-            templateUrl: 'pages/content.html'       
+            templateUrl: 'pages/content.html',
+            onEnter: function () {
+
+            }
         })
 
         .state('publication', {
             url: '/publication',
-            templateUrl: 'pages/publication.html'       
+            templateUrl: 'pages/publication.html'
         })
 
         .state('about', {
             url: '/about',
-            templateUrl: 'pages/about.html'       
+            templateUrl: 'pages/about.html'
         })
 
         .state('organization', {
             url: '/organization',
-            templateUrl: 'pages/organization.html'       
+            templateUrl: 'pages/organization.html'
         })
 
         .state('previousEvents', {
             url: '/previousEvents',
-            templateUrl: 'pages/previousEvents.html'       
+            templateUrl: 'pages/previousEvents.html'
         });
 
-    });
-
+});
