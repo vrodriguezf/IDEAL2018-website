@@ -382,3 +382,12 @@ body {
     height: 60px;
     width: auto;
 }
+
+/****************************************
+ * ICON-TOOGLEABLE
+ ****************************************/
+
+.icon-to-toogle > i {
+    padding: 5px;
+    font-size: 20px;
+}

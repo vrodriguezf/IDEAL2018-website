@@ -43,6 +43,16 @@
                 }
             };
             var jssor_1_slider = new $JssorSlider$("jssor_1", options);
+            
+            $('.icon-toogleable').click(function () {
+                icon = $(this).find(".icon-to-toogle .fa")
+                
+                if (icon.hasClass("fa fa-level-down")) {
+                    icon.removeClass("fa fa-level-down").addClass("fa fa-level-up")
+                } else if (icon.hasClass("fa fa-level-up")) {
+                    icon.removeClass("fa fa-level-up").addClass("fa fa-level-down")
+                }
+            });  
         });
 
     </script>
