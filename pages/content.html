@@ -1,535 +1,608 @@
 <html>
-    <div class="content" id="programme">
-        <h2 class="mt-4">Programme</h2>
-        <p>
-            TBD
-        </p>
-    </div>
-    <div class="content" id="plenaryTalks">
-        <h2 class="mt-4">Plenary talks</h2>
-        <p>
-            TBD
-        </p>
-    </div>
-    <div class="content" id="panelDiscussion">
-        <h2 class="mt-4">Panel discussion</h2>
-        <p>
-            TBD
-        </p>
-    </div>
-    <div class="content" id="tutorials">
-        <h2 class="mt-4">Tutorials</h2>
-        <p>
-            Below is the list of tutorials that have been accepted to be part of IDEAL 2018. Click on each of them to see more information.
-        </p>
-        <table class="table table-striped">
-            <thead class="thead-dark">
-                <tr>
-                    <th class="w-50">Title</th>
-                    <th class="w-50">Tutor(s)</th>
-                    <th class="w-5">Flyer</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="clickable icon-toogleable" data-toggle="collapse" data-target="#tutorials-1" aria-expanded="false" aria-controls="tutorials-1">
-                    <td class="icon-to-toogle">
-                        <a href="">Nature-Inspired Optimization Algorithms</a><i class="fa fa-level-down" aria-hidden="true"></i>                    
-                    </td>  
-                    <td>
-                        <dl class="dl-horizontal">
-                            <dt>Xin-She Yang</dt>
-                            <dd>Middlesex University, London, UK</dd>
-                        </dl>
-                    </td>
-                    <td>
-                        <a href="flyers/Yang_IDEAL2018.docx.pdf" target="blank"><i class="fa fa-download" aria-hidden="true"></i></a>
-                    </td>	
-                </tr>
-                <tr id="tutorials-1" class="collapse">
-                    <td colspan="3">
-                        <p>
-                            Many problems in optimization and computational intelligence are very challenging to solve, and some of these problems can be NP-hard, which means that there are often no efficient algorithms to tackle such hard problems. In many cases, nature-inspired metaheuristic algorithms can be a good alternative and such algorithms include genetic algorithms (GA), particle swarm optimization (PSO), firefly algorithm (FA) and many others. Over the last two decades, nature-inspired algorithms have become increasingly popular in solving large-scale, nonlinear, global optimization with many real-world applications. They also become an important of part of optimization and computational intelligence. This tutorial will provide a critical analysis of recent algorithms using mathematical theories such as Markov chains, dynamic systems, random walks and self-organization systems. This will provide some insight into these algorithms and their proper use in applications.
-                        </p>
-                        <h5>Topics and Format</h5>
-                        <p>
-                            This tutorial intends to introduce the fundamentals and latest advances of the state-of-the-art nature-inspired algorithms with the focus on analysis on new algorithms. Topics include
-                            <ul>
-                                <li>Essence of evolutionary algorithms and their key components
-                                </li>
-                                <li>
-                                    Introduction to some recent nature-inspired algorithms
-                                </li>
-                                <li>
-                                    Review of some recent theoretical results concerning evolutionary algorithms
-                                </li>
-                            </ul>
-                        </p>
-                        <h5>Tutor</h5>
-                        <p>
-                            <div class="media">
-                                <img class="mr-3" src="img/people/s200_xin-she.yang.jpg">
-                                <div class="media-body">
-                                    <h5 class="mt-0">Dr. Xin-She Yang</h5>
-                                    <h6 class="mt-0">Email: x.yang@mdx.ac.uk</h6>
-                                    <h6 class="mt-0"><a href="http://scholar.google.co.uk/citations?user=fA6aTlAAAAAJ ">Google Scholar</a></h6>
-                                    Xin-She Yang is Reader at School of Science and Technology, Middlesex University (UK) and an Adjunct Professor at Reykjavik University (Iceland). He is also an elected Bye-Fellow at Downing College, Cambridge University. He worked at Cambridge University and then National Physical Laboratory as a Senior Research Scientist after obtaining his DPhil in Applied Mathematics at Oxford University. With more 250 publications and more than 20 books, his research has been cited more than 30,000 times (according to Google Scholar) with an h-index of 66. He is also on the list of Highly Cited Researchers in 2016 and 2017 according to Thomson Reuters' Web of Science. He is the Chair of IEEE CIS Task Force on Business Intelligence and Knowledge Management. Yang has given many invited keynote talks at international conferences such as ICCS2015 (Iceland), SIBGRAPI2015 (Brazil), IEEE OIPE2016 (Italy), HS2017 (Spain), and ICIST2018 (London).  He has also given tutorials at international conferences such as ECTA2015 (Portugal), MOD2017 (Italy) and EANN2018 (UK) on algorithms and nature-inspired computation.
-                                </div>
-                            </div>
-                        </p>
-                    </td>
-                </tr>
-                <tr class="clickable icon-toogleable" data-toggle="collapse" data-target="#tutorials-2" aria-expanded="false" aria-controls="tutorials-2">
-                    <td class="icon-to-toogle">
-                        <a href="">Applying Machine Learning to detect Android Malware</a><i class="fa fa-level-down" aria-hidden="true"></i> 
-                    </td>  
-                    <td>
-                        <dl class="dl-horizontal">
-                            <dt>Alejandro Martin-Garcia</dt>
-                            <dd>Universidad Autonoma de Madrid, Spain</dd>
-                            <dt>Raul Lara-Cabrera</dt>
-                            <dd>Universidad Autonoma de Madrid, Spain</dd>
-                            <dt>David Camacho</dt>
-                            <dd>Universidad Autonoma de Madrid, Spain</dd>
-                        </dl>
-                    </td>
-                    <td>
-                        <a href="flyers/raul.pdf" target="blank"><i class="fa fa-download" aria-hidden="true"></i></a>
-                    </td>	
-                </tr>				
-                <tr id="tutorials-2" class="collapse">
-                    <td colspan="3">
-                        <h5>Contents</h5>
-                        <p>
-                            The possibilities and advantages of applying Machine Learning to solve the most diverse problems are beyond question. It has been proved how this wide set of techniques can help to address varied issues related to computer vision, natural language processing, fraud detection, robotics or bioinformatics, among many others. In this tutorial we aim to present the possibilities of this field when dealing with a complex, current and critical problem: the detection of malware in Android devices. As we will show, Machine Learning techniques such as classification and clustering algorithms, deep learning or evolutionary computation are currently being employed to detect those malware samples whose behavior exhibits malicious patterns. Furthermore, we will explain the different tools designed for performing Android malware analysis and reverse engineering processes. Finally, we will describe in first place our framework <strong>AndroPyTool</strong>, aimed at extracting a wide set of features from Android applications with the goal of deeply charactering their behavior and in second place the <strong>OmniDroid</strong> dataset, a comprehensive dataset of features from Android benign and malicious applications.
-                        </p>
-                        <h5>Intended audience</h5>
-                        <p>
-                            Open to all audiences interested in malware detection and machine learning.
-                        </p>
-                        <h5>Tutorial format</h5>
-                        <p>
-                            Mainly practical
-                        </p>
-                        <h5>Tutors</h5>
-                        <ul class="list-unstyled">
-                            <li class="media">
-                                <img class="mr-3" src="img/people/raul-lara-cabrera.jpg">
-                                <div class="media-body">
-                                    <h5 class="mt-0 mb-1">Raúl Lara-Cabrera</h5>
-                                    <h6 class="mt-0">Email: raul.lara@uam.es</h6>
-                                    <h6 class="mt-0"><a href="https://scholar.google.es/citations?user=WNO0uTwAAAAJ&hl=es">Google Scholar</a></h6>								
-                                    Raúl Lara-Cabrera obtained his M.Sc. and Ph.D. in Computer
-                                    Science from the University of Málaga (UMA), Spain
-                                    in 2013 and 2015 respectively. He is a research fellow
-                                    at the Department of Ingeniería Informática of the Universidad
-                                    Autónoma de Madrid, Spain. His main research
-                                    areas involve computational intelligence, videogames and
-                                    complex systems.
-                                </div>
-                            </li>
-                            <li class="media my-4">
-                                <img class="mr-3" src="img/people/alejandro-martin.jpg">
-                                <div class="media-body">
-                                    <h5 class="mt-0 mb-1">Alejandro Martin</h5>
-                                    <h6 class="mt-0">Email: alejandro.martin@uam.es</h6>
-                                    <h6 class="mt-0"><a href="https://scholar.google.es/citations?user=b3J9VRsAAAAJ&hl=es">Google Scholar</a></h6>				
-                                    Alejandro Martín holds a B.Sc. in Computer Science from
-                                    Universidad Carlos III de Madrid (2014) and a M.Sc. in
-                                    Computer Science and Technology at Universidad Carlos
-                                    III de Madrid (2015). Currently he is a Ph.D. candidate
-                                    at Universidad Autónoma de Madrid, where he is also
-                                    involved with AIDA research group. His main research
-                                    interests are related to Machine Learning and Cybersecurity,
-                                    focused on malware detection and classification
-                                    problems.							
-                                </div>
-                            </li>
-                            <li class="media">
-                                <img class="mr-3" src="img/people/DavidCamacho2.jpg">
-                                <div class="media-body">
-                                    <h5 class="mt-0 mb-1">David Camacho</h5>
-                                    <h6 class="mt-0">Email: david.camacho@uam.es</h6>
-                                    <h6 class="mt-0"><a href="https://scholar.google.es/citations?user=fpf6EDAAAAAJ&hl=es">Google Scholar</a></h6>
-                                    David Camacho is currently working as Associate Professor
-                                    in the Computer Science Department at Universidad
-                                    Autonoma de Madrid (Spain) and Head of the Applied
-                                    Intelligence & Data Analysis group. He received a Ph.D.
-                                    in Computer Science (2001) from Universidad Carlos III
-                                    de Madrid, and a B.S. in Physics (1994) from Universidad
-                                    Complutense de Madrid. He has published more than
-                                    200 journals, books, and conference papers. His research
-                                    interests includes Data Mining (Clustering), Evolutionary
-                                    Computation (GA & GP), Multi-Agent Systems and Swarm
-                                    Intelligence (Ant colonies), Automated Planning and Machine
-                                    Learning, or Video games among others.
-                                </div>
-                            </li>
-                        </ul>					
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <div class="content" id="workshops">
-        <h2 class="mt-4">Workshops</h2>
-        <p>
-            Below is the list of workshops that have been accepted to be part of IDEAL 2018. Click on each of them to see more information. Please go to the <a ui-sref="publication({'#': 'paperSubmission'})">Paper Submission</a> section of this website for more information about how to submit a paper to one of these workshops.
-        </p>
-        <table class="table table-striped">
-            <thead class="thead-dark">
-                <tr>
-                    <th class="w-50">Title</th>
-                    <th class="w-50">Organizers</th>
-                    <th class="w-5">Flyer</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="clickable icon-toogleable" data-toggle="collapse" data-target="#workshops-1" aria-expanded="false" aria-controls="workshops-1">
-                    <td class="icon-to-toogle">
-                        <a href="">RiskTrack: Analyzing radicalization in Online Social Networks</a><i class="fa fa-level-down" aria-hidden="true"></i> 
-                    </td>
-                    <td>
-                        <dl class="dl-horizontal">
-                            <dt>Javier Torregrosa</dt>
-                            <dd>Universidad Autónoma de Madrid, Spain</dd>
-                            <dt>Raúl Lara-Cabrera</dt>
-                            <dd>Universidad Autónoma de Madrid, Spain</dd>
-                            <dt>Antonio González Pardo</dt>
-                            <dd>Universidad Autónoma de Madrid, Spain</dd>
-                            <dt>Mahmoud Barhamgi</dt>
-                            <dd>Université Claude Bernard Lyon 1, France</dd>
-                        </dl>
-                    </td>
-                    <td>
-                        <a href="flyers/risktrack.pdf" target="blank"><i class="fa fa-download" aria-hidden="true"></i></a>
-                    </td>			
-                </tr>
-                <tr id="workshops-1" class="collapse">
-                    <td colspan="3">
-                        <p>
-                            Radicalization has been a relevant topic for Europe in recent years, especially with the growth of terrorist groups like Al Qaeda or Daesh. The threat this groups represent has led to a increment of the efforts to understand how radicalization works, how to measure it and when a person becomes in risk of being radicalized. With this aim, Europe has founded several projects to fight this topic from several perspectives, including the recent application of Big Data to the detection and measurement of the risk of radicalization. 
-                        </p>
-                        <p>
-                            This workshop raises two different objectives. First, it will serve as a final presentation of the RiskTrack Project, presenting the tool developed by a European consortium to detect and measure radicalization in Online Social Networks. Secondly, topics related to the study of terrorism and counter-terrorism will be discussed, focusing specially on how the radicalization can be detected, assessed and countered. Finally, a discussion about the future perspectives on radicalization tracking will be held by the workshops attendees. 
-                        </p>
-                        <p>
-                            Potential topics of interest include but are not limited to:
-                            <ul>
-                                <li>Radicalization measurement.</li>
-                                <li>Big Data techniques and their contribution to counter-terrorism.</li>
-                                <li>New tendencies in the study of terrorism.</li>
-                                <li>Linguistic assessment of radicalized profiles.</li>
-                                <li>Radicalization in Online Social Networks.</li>
-                                <li>Counter radicalization tendencies.</li>
-                            </ul>
-                        </p>
-                        <p>
-                            <dl>
-                                <dt>Name of the presenter of the introductory talk</dt>
-                                <dd>David Camacho, Universidad Autónoma de Madrid, Spain</dd>
-                                <dt>Topic for the discussion</dt>
-                                <dd>Presnet and future perspectives on radicalization tracking.</dd>
-                            </dl>
-                        </p>
-                        <h5>Organizers</h5>
-                        <p>
-                            Javier Torregrosa (UAM). Computer Engineering Department.
-                        </p>
-                        <p>
-                            Raúl Lara-Cabrera (UAM). Computer Engineering Department.
-                        </p>
-                        <p>
-                            Antonio González Pardo (UAM). Computer Engineering Department.
-                        </p>
-                        <p>
-                            Mahmoud Barhamgi (UCBL). Computer Science Department. 
-                        </p>
-                    </td>
-                </tr>
-            </tbody>	
-        </table>
-    </div>
-    <div class="content" id="specialSessions">
-        <h2 class="mt-4">Special Sessions</h2>
-        <p>
-            Below is the list of Special Sessions that have been accepted to be part of IDEAL 2018. Click on each of them to see more information. Please go to the <a ui-sref="publication({'#': 'paperSubmission'})">Paper Submission</a> section of this website for more information about how to submit a paper to one of these Special Sessions.
-        </p>
-        <table class="table table-striped">
-            <thead class="thead-dark">
-                <tr>
-                    <th class="w-50">Title</th>
-                    <th class="w-50">Organizers</th>
-                    <th class="w-5">Flyer</th>
-                </tr>
-            </thead>
-            <tbody >
-                <tr class="clickable icon-toogleable" data-toggle="collapse" data-target="#group-of-rows-1" aria-expanded="false" aria-controls="group-of-rows-1">
-                    <td class="icon-to-toogle">
-                        <a href="">Intelligent techniques for the analysis of scientific articles and patents</a><i class="fa fa-level-down" aria-hidden="true"></i> 
-                    </td>  
-                    <td>
-                        <dl class="dl-horizontal">
-                            <dt>Manuel J. Cobo</dt>
-                            <dd>University of Granada, Spain</dd>
-                            <dt>Pietro Ducange</dt>
-                            <dd>eCampus University, Italy</dd>
-                            <dt>Antonio Gabriel López-Herrera</dt>
-                            <dd>University of Granada, Spain</dd>
-                            <dt>Enrique Herrera-Viedma</dt>
-                            <dd>University of Granada, Spain</dd>
-                        </dl>
-                    </td>
-                    <td>
-                        <a href="flyers/cobo.pdf" target="blank"><i class="fa fa-download" aria-hidden="true"></i></a>
-                    </td>			
-                </tr>
-                <tr id="group-of-rows-1" class="collapse">
-                    <td colspan="3">
-                        <p>
-                            Nowadays, the activities related with the research and development, produce a large
-                            amount of data and documents in form of publications, such as, papers, patents, doctoral
-                            theses, conference contributions, reports, etc. Moreover, the total volume of scientific and
-                            technological data available, is growing year by year. From a traditional point of view,
-                            the information used to be indexed in bibliographical databases (e.g., Web of Science,
-                            Scopus, etc.), patents databases. (e.g., European Patent Office, United States Patent and
-                            Trademark Office, etc.), or indeed in public or private repositories.					
-                        </p>
-                        <p>
-                            This large amount of digital scholarly and technological data offers great opportunities to
-                            explore and analyze the patterns and trends that characterize the structure and evolution
-                            of science. That, the Science of Science is focused in the analysis of the research output
-                            combining computational and social scientists.
-                        </p>
-                        <h5>Objectives and Scope</h5>
-                        <p>
-                            The main aim of this special issue is to put the focus on the application of intelligent
-                            techniques based on artificial intelligence, complex systems, data mining and information
-                            retrieval in order to extract the hidden knowledge within the research activities, and track
-                            patterns and trends.
-                        </p>
-                        <p>
-                            Potential topics of interest include but are not limited to:
-                            <ul>
-                                <li>Communities discovery and clustering algorithms</li>
-                                <li>Entity disambiguation</li>
-                                <li>Scientific sentiment analysis</li>
-                                <li>Citation and impact prediction</li>
-                                <li>New model representation</li>
-                            </ul>
-                        </p>
-                        <h5>Organizers</h5>
-                        <p>
-                            Manuel J. Cobo. Department of Computer Science and Engineering, University of Granada, Spain. <a style="color:blue" href="Mailto:manueljesus.cobo@uca.es">manueljesus.cobo@uca.es</a></br>
+<div class="content" id="programme">
+	<h2 class="mt-4">Programme</h2>
+	<p>
+		TBD
+	</p>
+</div>
+<div class="content" id="plenaryTalks">
+	<h2 class="mt-4">Plenary talks</h2>
+	<p>
+		TBD
+	</p>
+</div>
+<div class="content" id="panelDiscussion">
+	<h2 class="mt-4">Panel discussion</h2>
+	<p>
+		TBD
+	</p>
+</div>
+<div class="content" id="tutorials">
+	<h2 class="mt-4">Tutorials</h2>
+	<p>
+		Below is the list of tutorials that have been accepted to be part of IDEAL 2018. Click on each of them to see more information.
+	</p>
+	<table class="table table-striped">
+		<thead class="thead-dark">
+			<tr>
+				<th class="w-50">Title</th>
+				<th class="w-50">Tutor(s)</th>
+				<th class="w-5">Flyer</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="clickable icon-toogleable" data-toggle="collapse" data-target="#tutorials-1" aria-expanded="false" aria-controls="tutorials-1">
+				<td class="icon-to-toogle">
+					<a href="">Nature-Inspired Optimization Algorithms</a><i class="fa fa-level-down" aria-hidden="true"></i>                    
+				</td>  
+				<td>
+					<dl class="dl-horizontal">
+						<dt>Xin-She Yang</dt>
+						<dd>Middlesex University, London, UK</dd>
+					</dl>
+				</td>
+				<td>
+					<a href="flyers/Yang_IDEAL2018.docx.pdf" target="blank"><i class="fa fa-download" aria-hidden="true"></i></a>
+				</td>	
+			</tr>
+			<tr id="tutorials-1" class="collapse">
+				<td colspan="3">
+					<p>
+						Many problems in optimization and computational intelligence are very challenging to solve, and some of these problems can be NP-hard, which means that there are often no efficient algorithms to tackle such hard problems. In many cases, nature-inspired metaheuristic algorithms can be a good alternative and such algorithms include genetic algorithms (GA), particle swarm optimization (PSO), firefly algorithm (FA) and many others. Over the last two decades, nature-inspired algorithms have become increasingly popular in solving large-scale, nonlinear, global optimization with many real-world applications. They also become an important of part of optimization and computational intelligence. This tutorial will provide a critical analysis of recent algorithms using mathematical theories such as Markov chains, dynamic systems, random walks and self-organization systems. This will provide some insight into these algorithms and their proper use in applications.
+					</p>
+					<h5>Topics and Format</h5>
+					<p>
+						This tutorial intends to introduce the fundamentals and latest advances of the state-of-the-art nature-inspired algorithms with the focus on analysis on new algorithms. Topics include
+						<ul>
+							<li>Essence of evolutionary algorithms and their key components
+							</li>
+							<li>
+								Introduction to some recent nature-inspired algorithms
+							</li>
+							<li>
+								Review of some recent theoretical results concerning evolutionary algorithms
+							</li>
+						</ul>
+					</p>
+					<h5>Tutor</h5>
+					<p>
+						<div class="media">
+							<img class="mr-3" src="img/people/s200_xin-she.yang.jpg">
+							<div class="media-body">
+								<h5 class="mt-0">Dr. Xin-She Yang</h5>
+								<h6 class="mt-0">Email: x.yang@mdx.ac.uk</h6>
+								<h6 class="mt-0"><a href="http://scholar.google.co.uk/citations?user=fA6aTlAAAAAJ ">Google Scholar</a></h6>
+								Xin-She Yang is Reader at School of Science and Technology, Middlesex University (UK) and an Adjunct Professor at Reykjavik University (Iceland). He is also an elected Bye-Fellow at Downing College, Cambridge University. He worked at Cambridge University and then National Physical Laboratory as a Senior Research Scientist after obtaining his DPhil in Applied Mathematics at Oxford University. With more 250 publications and more than 20 books, his research has been cited more than 30,000 times (according to Google Scholar) with an h-index of 66. He is also on the list of Highly Cited Researchers in 2016 and 2017 according to Thomson Reuters' Web of Science. He is the Chair of IEEE CIS Task Force on Business Intelligence and Knowledge Management. Yang has given many invited keynote talks at international conferences such as ICCS2015 (Iceland), SIBGRAPI2015 (Brazil), IEEE OIPE2016 (Italy), HS2017 (Spain), and ICIST2018 (London).  He has also given tutorials at international conferences such as ECTA2015 (Portugal), MOD2017 (Italy) and EANN2018 (UK) on algorithms and nature-inspired computation.
+							</div>
+						</div>
+					</p>
+				</td>
+			</tr>
+			<tr class="clickable icon-toogleable" data-toggle="collapse" data-target="#tutorials-2" aria-expanded="false" aria-controls="tutorials-2">
+				<td class="icon-to-toogle">
+					<a href="">Applying Machine Learning to detect Android Malware</a><i class="fa fa-level-down" aria-hidden="true"></i> 
+				</td>  
+				<td>
+					<dl class="dl-horizontal">
+						<dt>Alejandro Martin-Garcia</dt>
+						<dd>Universidad Autonoma de Madrid, Spain</dd>
+						<dt>Raul Lara-Cabrera</dt>
+						<dd>Universidad Autonoma de Madrid, Spain</dd>
+						<dt>David Camacho</dt>
+						<dd>Universidad Autonoma de Madrid, Spain</dd>
+					</dl>
+				</td>
+				<td>
+					<a href="flyers/raul.pdf" target="blank"><i class="fa fa-download" aria-hidden="true"></i></a>
+				</td>	
+			</tr>				
+			<tr id="tutorials-2" class="collapse">
+				<td colspan="3">
+					<h5>Contents</h5>
+					<p>
+						The possibilities and advantages of applying Machine Learning to solve the most diverse problems are beyond question. It has been proved how this wide set of techniques can help to address varied issues related to computer vision, natural language processing, fraud detection, robotics or bioinformatics, among many others. In this tutorial we aim to present the possibilities of this field when dealing with a complex, current and critical problem: the detection of malware in Android devices. As we will show, Machine Learning techniques such as classification and clustering algorithms, deep learning or evolutionary computation are currently being employed to detect those malware samples whose behavior exhibits malicious patterns. Furthermore, we will explain the different tools designed for performing Android malware analysis and reverse engineering processes. Finally, we will describe in first place our framework <strong>AndroPyTool</strong>, aimed at extracting a wide set of features from Android applications with the goal of deeply charactering their behavior and in second place the <strong>OmniDroid</strong> dataset, a comprehensive dataset of features from Android benign and malicious applications.
+					</p>
+					<h5>Intended audience</h5>
+					<p>
+						Open to all audiences interested in malware detection and machine learning.
+					</p>
+					<h5>Tutorial format</h5>
+					<p>
+						Mainly practical
+					</p>
+					<h5>Tutors</h5>
+					<ul class="list-unstyled">
+						<li class="media">
+							<img class="mr-3" src="img/people/raul-lara-cabrera.jpg">
+							<div class="media-body">
+								<h5 class="mt-0 mb-1">Raúl Lara-Cabrera</h5>
+								<h6 class="mt-0">Email: raul.lara@uam.es</h6>
+								<h6 class="mt-0"><a href="https://scholar.google.es/citations?user=WNO0uTwAAAAJ&hl=es">Google Scholar</a></h6>								
+								Raúl Lara-Cabrera obtained his M.Sc. and Ph.D. in Computer
+								Science from the University of Málaga (UMA), Spain
+								in 2013 and 2015 respectively. He is a research fellow
+								at the Department of Ingeniería Informática of the Universidad
+								Autónoma de Madrid, Spain. His main research
+								areas involve computational intelligence, videogames and
+								complex systems.
+							</div>
+						</li>
+						<li class="media my-4">
+							<img class="mr-3" src="img/people/alejandro-martin.jpg">
+							<div class="media-body">
+								<h5 class="mt-0 mb-1">Alejandro Martin</h5>
+								<h6 class="mt-0">Email: alejandro.martin@uam.es</h6>
+								<h6 class="mt-0"><a href="https://scholar.google.es/citations?user=b3J9VRsAAAAJ&hl=es">Google Scholar</a></h6>				
+								Alejandro Martín holds a B.Sc. in Computer Science from
+								Universidad Carlos III de Madrid (2014) and a M.Sc. in
+								Computer Science and Technology at Universidad Carlos
+								III de Madrid (2015). Currently he is a Ph.D. candidate
+								at Universidad Autónoma de Madrid, where he is also
+								involved with AIDA research group. His main research
+								interests are related to Machine Learning and Cybersecurity,
+								focused on malware detection and classification
+								problems.							
+							</div>
+						</li>
+						<li class="media">
+							<img class="mr-3" src="img/people/DavidCamacho2.jpg">
+							<div class="media-body">
+								<h5 class="mt-0 mb-1">David Camacho</h5>
+								<h6 class="mt-0">Email: david.camacho@uam.es</h6>
+								<h6 class="mt-0"><a href="https://scholar.google.es/citations?user=fpf6EDAAAAAJ&hl=es">Google Scholar</a></h6>
+								David Camacho is currently working as Associate Professor
+								in the Computer Science Department at Universidad
+								Autonoma de Madrid (Spain) and Head of the Applied
+								Intelligence & Data Analysis group. He received a Ph.D.
+								in Computer Science (2001) from Universidad Carlos III
+								de Madrid, and a B.S. in Physics (1994) from Universidad
+								Complutense de Madrid. He has published more than
+								200 journals, books, and conference papers. His research
+								interests includes Data Mining (Clustering), Evolutionary
+								Computation (GA & GP), Multi-Agent Systems and Swarm
+								Intelligence (Ant colonies), Automated Planning and Machine
+								Learning, or Video games among others.
+							</div>
+						</li>
+					</ul>					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div class="content" id="workshops">
+	<h2 class="mt-4">Workshops</h2>
+	<p>
+		Below is the list of workshops that have been accepted to be part of IDEAL 2018. Click on each of them to see more information. Please go to the <a ui-sref="publication({'#': 'paperSubmission'})">Paper Submission</a> section of this website for more information about how to submit a paper to one of these workshops.
+	</p>
+	<table class="table table-striped">
+		<thead class="thead-dark">
+			<tr>
+				<th class="w-50">Title</th>
+				<th class="w-50">Organizers</th>
+				<th class="w-5">Flyer</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="clickable icon-toogleable" data-toggle="collapse" data-target="#workshops-1" aria-expanded="false" aria-controls="workshops-1">
+				<td class="icon-to-toogle">
+					<a href="">RiskTrack: Analyzing radicalization in Online Social Networks</a><i class="fa fa-level-down" aria-hidden="true"></i> 
+				</td>
+				<td>
+					<dl class="dl-horizontal">
+						<dt>Javier Torregrosa</dt>
+						<dd>Universidad Autónoma de Madrid, Spain</dd>
+						<dt>Raúl Lara-Cabrera</dt>
+						<dd>Universidad Autónoma de Madrid, Spain</dd>
+						<dt>Antonio González Pardo</dt>
+						<dd>Universidad Autónoma de Madrid, Spain</dd>
+						<dt>Mahmoud Barhamgi</dt>
+						<dd>Université Claude Bernard Lyon 1, France</dd>
+					</dl>
+				</td>
+				<td>
+					<a href="flyers/risktrack.pdf" target="blank"><i class="fa fa-download" aria-hidden="true"></i></a>
+				</td>			
+			</tr>
+			<tr id="workshops-1" class="collapse">
+				<td colspan="3">
+					<p>
+						Radicalization has been a relevant topic for Europe in recent years, especially with the growth of terrorist groups like Al Qaeda or Daesh. The threat this groups represent has led to a increment of the efforts to understand how radicalization works, how to measure it and when a person becomes in risk of being radicalized. With this aim, Europe has founded several projects to fight this topic from several perspectives, including the recent application of Big Data to the detection and measurement of the risk of radicalization. 
+					</p>
+					<p>
+						This workshop raises two different objectives. First, it will serve as a final presentation of the RiskTrack Project, presenting the tool developed by a European consortium to detect and measure radicalization in Online Social Networks. Secondly, topics related to the study of terrorism and counter-terrorism will be discussed, focusing specially on how the radicalization can be detected, assessed and countered. Finally, a discussion about the future perspectives on radicalization tracking will be held by the workshops attendees. 
+					</p>
+					<p>
+						Potential topics of interest include but are not limited to:
+						<ul>
+							<li>Radicalization measurement.</li>
+							<li>Big Data techniques and their contribution to counter-terrorism.</li>
+							<li>New tendencies in the study of terrorism.</li>
+							<li>Linguistic assessment of radicalized profiles.</li>
+							<li>Radicalization in Online Social Networks.</li>
+							<li>Counter radicalization tendencies.</li>
+						</ul>
+					</p>
+					<p>
+						<dl>
+							<dt>Name of the presenter of the introductory talk</dt>
+							<dd>David Camacho, Universidad Autónoma de Madrid, Spain</dd>
+							<dt>Topic for the discussion</dt>
+							<dd>Presnet and future perspectives on radicalization tracking.</dd>
+						</dl>
+					</p>
+					<h5>Organizers</h5>
+					<p>
+						Javier Torregrosa (UAM). Computer Engineering Department.
+					</p>
+					<p>
+						Raúl Lara-Cabrera (UAM). Computer Engineering Department.
+					</p>
+					<p>
+						Antonio González Pardo (UAM). Computer Engineering Department.
+					</p>
+					<p>
+						Mahmoud Barhamgi (UCBL). Computer Science Department. 
+					</p>
+				</td>
+			</tr>
+			<tr class="clickable icon-toogleable" data-toggle="collapse" data-target="#workshops-2" aria-expanded="false" aria-controls="workshops-2">
+				<td class="icon-to-toogle">
+					<a href="">Methods for Interpretation of Industrial Event Logs (MIEL 2018)</a><i class="fa fa-level-down" aria-hidden="true"></i> 
+				</td>
+				<td>
+					<dl class="dl-horizontal">
+						<dt>Grzegorz J. Nalepa</dt>
+						<dd>AGH University of Science and Technology, Poland</dd>
+						<dt>David Camacho</dt>
+						<dd>Universidad Autónoma de Madrid, Spain</dd>
+						<dt>Edyta Brzychczy</dt>
+						<dd>AGH University of Science and Technology, Poland</dd>
+						<dt>Roberto Confalonieri</dt>
+						<dd>Smart Data Factory, Free University of Bozen-Bolzano, Italy</dd>
+						<dt>Martin Atzmueller</dt>
+						<dd>Tilburg University, The Netherlands</dd>
+					</dl>
+				</td>
+				<td>
+					<a href="flyers/miel.pdf" target="blank"><i class="fa fa-download" aria-hidden="true"></i></a>
+				</td>			
+			</tr>
+			<tr id="workshops-2" class="collapse">
+				<td colspan="3">
+					<h5>Description</h5>
+					<p>
+						The objective of the workshop is to discuss novel intelligent data analysis methods suitable for the analysis and interpretation of industrial event logs. We aim to include and possibly combine two distinct perspectives. The first uses methods from data mining and computational intelligence. The second uses background domain knowledge for conceptual analysis. We would like to focus on (but not limit to) the applications of the mentioned methods according to those two perspectives to Industry 4.0. In this setting, the source of the event logs would be industrial machinery, but also possibly personnel or activity monitoring devices.
+					</p>
+					<p>
+						Topics of interest of the workshop include:
+						<ul>
+							<li>activity recognition in the industrial setting</li>
+							<li>anomaly detection on event log data</li>
+							<li>conceptual modeling of industrial processes</li>
+							<li>conformance checking of industrial process models</li>
+							<li>event logs abstraction methods</li>
+							<li>intelligent analysis of multi-sensor data</li>
+							<li>industrial case studies with real-life complex event logs</li>
+							<li>industrial process modeling</li>
+							<li>knowledge graphs on event log data</li>
+							<li>network analysis on event log data</li>
+							<li>ontologies for industrial domains</li>
+							<li>ontology-based methods for event-log generation</li>
+							<li>supervised and unsupervised methods of log analysis</li>
+						</ul>
+					</p>
+					<h5>Submisson & Publication</h5>
+					<p>
+						The submission guidelines, deadlines and publication topics will adhere to the standard IDEAL 2018 rules for workshops.
+					</p>
+					<h5>Introductory talk</h5>
+					<p>
+						Martin Atzmueller: Computational Sensemaking in Industry 4.0: From Analysis to Interpretation
+					</p>
+					<h5>Program Committee (tentative)</h5>
+					<p>
+						Andrea Burattin, Technical University of Denmark, Denmark </br>
+						Szymon Bobek, AGH University of Science and Technology, Poland </br>
+						Josep Carmona, Universitat Politècnica de Catalunya, Spain</br>
+						Diego Calvanese, Free University of Bozen-Bolzano, Italy</br>
+						Dirk Fahland, Technical University in Eindhoven, The Netherlands</br>
+						Mannhardt Felix, SINTEF, Norway</br>
+						Chiara Ghidini, FBK Trento, Italy</br>
+						Rushed Kanawati, Université Sorbonne Paris Cité, France</br>
+						Benjamin Kloepper, ABB, Germany</br>
+						Marco Montali, Free University of Bozen-Bolzano, Italy</br>
+						Jose Tomas Palma Mendez, Universidad de Murcia, Spain</br>
+						Marcin Szpyrka, AGH University of Science and Technology, Poland</br>
+						Víctor Rodríguez-Fernández, Universidad Autónoma de Madrid, Spain</br>
+						Javier Del Ser, University of the Basque Country, Spain</br>
+					</p>
+				</td>
+			</tr>                
+		</tbody>	
+	</table>
+</div>
+<div class="content" id="specialSessions">
+	<h2 class="mt-4">Special Sessions</h2>
+	<p>
+		Below is the list of Special Sessions that have been accepted to be part of IDEAL 2018. Click on each of them to see more information. Please go to the <a ui-sref="publication({'#': 'paperSubmission'})">Paper Submission</a> section of this website for more information about how to submit a paper to one of these Special Sessions.
+	</p>
+	<table class="table table-striped">
+		<thead class="thead-dark">
+			<tr>
+				<th class="w-50">Title</th>
+				<th class="w-50">Organizers</th>
+				<th class="w-5">Flyer</th>
+			</tr>
+		</thead>
+		<tbody >
+			<tr class="clickable icon-toogleable" data-toggle="collapse" data-target="#group-of-rows-1" aria-expanded="false" aria-controls="group-of-rows-1">
+				<td class="icon-to-toogle">
+					<a href="">Intelligent techniques for the analysis of scientific articles and patents</a><i class="fa fa-level-down" aria-hidden="true"></i> 
+				</td>  
+				<td>
+					<dl class="dl-horizontal">
+						<dt>Manuel J. Cobo</dt>
+						<dd>University of Granada, Spain</dd>
+						<dt>Pietro Ducange</dt>
+						<dd>eCampus University, Italy</dd>
+						<dt>Antonio Gabriel López-Herrera</dt>
+						<dd>University of Granada, Spain</dd>
+						<dt>Enrique Herrera-Viedma</dt>
+						<dd>University of Granada, Spain</dd>
+					</dl>
+				</td>
+				<td>
+					<a href="flyers/cobo.pdf" target="blank"><i class="fa fa-download" aria-hidden="true"></i></a>
+				</td>			
+			</tr>
+			<tr id="group-of-rows-1" class="collapse">
+				<td colspan="3">
+					<p>
+						Nowadays, the activities related with the research and development, produce a large
+						amount of data and documents in form of publications, such as, papers, patents, doctoral
+						theses, conference contributions, reports, etc. Moreover, the total volume of scientific and
+						technological data available, is growing year by year. From a traditional point of view,
+						the information used to be indexed in bibliographical databases (e.g., Web of Science,
+						Scopus, etc.), patents databases. (e.g., European Patent Office, United States Patent and
+						Trademark Office, etc.), or indeed in public or private repositories.					
+					</p>
+					<p>
+						This large amount of digital scholarly and technological data offers great opportunities to
+						explore and analyze the patterns and trends that characterize the structure and evolution
+						of science. That, the Science of Science is focused in the analysis of the research output
+						combining computational and social scientists.
+					</p>
+					<h5>Objectives and Scope</h5>
+					<p>
+						The main aim of this special issue is to put the focus on the application of intelligent
+						techniques based on artificial intelligence, complex systems, data mining and information
+						retrieval in order to extract the hidden knowledge within the research activities, and track
+						patterns and trends.
+					</p>
+					<p>
+						Potential topics of interest include but are not limited to:
+						<ul>
+							<li>Communities discovery and clustering algorithms</li>
+							<li>Entity disambiguation</li>
+							<li>Scientific sentiment analysis</li>
+							<li>Citation and impact prediction</li>
+							<li>New model representation</li>
+						</ul>
+					</p>
+					<h5>Organizers</h5>
+					<p>
+						Manuel J. Cobo. Department of Computer Science and Engineering, University of Granada, Spain. <a style="color:blue" href="Mailto:manueljesus.cobo@uca.es">manueljesus.cobo@uca.es</a></br>
 
-                            Pietro Ducange. SMART Engineering Solutions & Technologies (SMARTEST), eCampus University, Italy. <a style="color:blue" href="Mailto:pietro.ducange@uniecampus.it">pietro.ducange@uniecampus.it</a></br>
+						Pietro Ducange. SMART Engineering Solutions & Technologies (SMARTEST), eCampus University, Italy. <a style="color:blue" href="Mailto:pietro.ducange@uniecampus.it">pietro.ducange@uniecampus.it</a></br>
 
-                            Antonio Gabriel López-Herrera. Department of Computer Science and Artificial Intelligence, University of Granada, Spain. <a style="color:blue" href="Mailto:lopez-herrera@decsai.ugr.es">lopez-herrera@decsai.ugr.es</a></br>
+						Antonio Gabriel López-Herrera. Department of Computer Science and Artificial Intelligence, University of Granada, Spain. <a style="color:blue" href="Mailto:lopez-herrera@decsai.ugr.es">lopez-herrera@decsai.ugr.es</a></br>
 
-                            Enrique Herrera-Viedma. Department of Computer Science and Artificial Intelligence, University of Granada, Spain. <a style="color:blue" href="Mailto:viedma@decsai.ugr.es">viedma@decsai.ugr.es</a></br>
-                        </p>					
-                    </td>
-                </tr>
-                <tr class="clickable icon-toogleable" data-toggle="collapse" data-target="#group-of-rows-2" aria-expanded="false" aria-controls="group-of-rows-2">
-                    <!--<th><i class="fa fa-plus" aria-hidden="true"></i></th>-->
-                    <td class="icon-to-toogle">
-                        <a href="">Machine learning for renewable energy applications</a><i class="fa fa-level-down" aria-hidden="true"></i> 
-                    </td>  
-                    <td>
-                        <dl class="dl-horizontal">
-                            <dt>Sancho Salcedo Sanz</dt>
-                            <dd>Universidad de Alcalá, Spain</dd>
-                            <dt>Pedro Antonio Gutiérrez</dt>
-                            <dd>University of Cordoba, Spain</dd>
-                        </dl>
-                    </td>
-                    <td>
-                        <a href="flyers/sancho.pdf"><i class="fa fa-download" aria-hidden="true"></i></a>
-                    </td>
-                </tr>
-                <tr id="group-of-rows-2" class="collapse">
-                    <td colspan="3">
-                        <h5>Scope</h5>
-                        <p>
-                            In the last decade, global energy demand has increased to non-previously seen levels, mainly due to the increase in population, fierce urbanization in developed countries and aggressive industrial development all around the world. Conventional fossil-based energy sources have limited reservoirs and a deep environmental impact (contributing to global warming), and therefore they cannot satisfy this global demand for energy in a sustainable way. These issues related to fossil-based sources have led to a very important development of Renewable Energy (RE) sources in the last years, mainly in renewable technologies such as wind, solar, hydro or marine energies, among others. In this regard, Machine Learning (ML) techniques have been demonstrated to be excellent tools to cope with difficult problems arisen from new RE sources. There are many RE applications which can be tackled by ML techniques, such as prediction problems (e.g. solar radiation or significant wave height estimation), optimization algorithms (wind farm or RE devices’ design), new control techniques or fault diagnosis in RE systems, all of them with the common objective of improving significantly RE systems.
-                        </p>
-                        <p>
-                            This special session aims to cover a wide range of works and recent advances on the application of ML techniques to RE problems. We hope that this session can provide a common forum for researchers and practitioners to exchange their ideas and report their latest finding in the area.
-                        </p>
-                        <h5>Topics</h5>
-                        <p>
-                            In particular we encourage submissions addressing the following issues: 
-                            <ul>
-                                <li>Wind speed prediction problems.</li>
-                                <li>Solar radiation prediction problems.</li>
-                                <li>Wave height estimation problems.</li>
-                                <li>RE Power prediction.</li>
-                                <li>Fault diagnosis in RE-related systems.</li>
-                                <li>Power quality disturbance detection and analysis.</li>
-                                <li>Appliance Load Monitoring applications.</li>
-                                <li>Any application of ML techniques to RE problems.</li>
-                            </ul>
-                        </p>
-                        <h5>Organizers</h5>
-                        <p>
-                            Sancho Salcedo Sanz, Associate Professor, Universidad de Alcalá. <a style="color:blue" href="Mailto:sancho.salcedo@uah.es">sancho.salcedo@uah.es</a></br>
-                            Pedro Antonio Gutiérrez, Dept. of Computer Science and Numerical Analysis, University of Cordoba, Spain. <a style="color:blue" href="Mailto:pagutierrez@uco.es">pagutierrez@uco.es</a></br></br>
-                        </p>
-                    </td>
-                </tr>
-                <tr class="clickable icon-toogleable" data-toggle="collapse" data-target="#group-of-rows-3" aria-expanded="false" aria-controls="group-of-rows-3">
-                    <!--<th><i class="fa fa-plus" aria-hidden="true"></i></th>-->
-                    <td class="icon-to-toogle">
-                        <a href="">Evolutionary Computing Methods for Data Mining: Theory and Applications</a><i class="fa fa-level-down" aria-hidden="true"></i> 
-                    </td>  
-                    <td>
-                        <dl class="dl-horizontal">
-                            <dt>Eneko Osaba</dt>
-                            <dd>TECNALIA Research and Innovaton, Spain</dd>
-                            <dt>Javier Del Ser</dt>
-                            <dd>University of the Basque Country, Spain</dd>
-                            <dt>Sancho Salcedo-Sanz</dt>
-                            <dd>University of Alcalá, Spain</dd>
-                            <dt>Antonio D. Masegosa</dt>
-                            <dd>University of Deusto, Spain</dd>
-                        </dl>
-                    </td>
-                    <td>
-                        <a href="flyers/delser.pdf"><i class="fa fa-download" aria-hidden="true"></i></a>
-                    </td>
-                </tr>
-                <tr id="group-of-rows-3" class="collapse">
-                    <td colspan="3">
-                        <p>
-                            Evolutionary Computation has a great popularity in the current scientific community, being the focus scope
-                            of many research contributions in the literature year by year. The rationale behind the acquired momentum
-                            by this broad family of methods lies on their outstanding performance evinced in hundreds of research fields
-                            and problem instances. In this regard many different inspirational sources can be found for these solvers,
-                            such as the behavioral patterns of ants or swarms of particles, as well as the mechanisms behind genetic
-                            inheritance and brain connections. Furthermore, this type of techniques is being applied to a wide range of
-                            problems and areas of knowledge, such as transportation, medicine or industry. The proposed special session
-                            is focused on the development of Evolutionary Computing methods and their application to data mining,
-                            data science and big data. More specifically, we will analyze the latest theoretical advances on the use of this
-                            kind of techniques in any of the aspects and processes related with data science, as well as the latest real-
-                            world applications regarding this topic.
-                        </p>
-                        <p>
-                            This Special Session to be held during IDEAL2018 has as objective to bring researchers and experts together
-                            to discuss and share their experiences. The session will provide a platform to share the current and new
-                            research topics and ideas, increasing international collaborations researchers. The topics of interest include,
-                            but are not limited to:
-                            <ul>
-                                <li>Data mining, Data science and Big Data.</li>
-                                <li>Recent advances on nature inspired methods for data science, with emphasis on those inspired by
-                                    biological processes and behaviors typically observed in Nature, such as Particle Swarm Optimization, Ant
-                                    Colony and Genetic Algorithms.
-                                </li>
-                                <li>
-                                    Novel applications of evolutionary computing methods to data mining, with priority on real-world
-                                    scenarios.							
-                                </li>
-                                <li>
-                                    Nature-inspired heuristics, Evolutionary Algorithms, Swarm Intelligence, Hyper Heuristics, Memetic
-                                    Computing, and Distributed Evolutionary Techniques.
-                                </li>
-                                <li>
-                                    Evolutionary Computing methods for supervised and unsupervised data mining
-                                </li>
-                                <li>
-                                    Combining/Hybridizing Evolutionary Computing techniques with machine learning and data mining
-                                    techniques.
-                                </li>
-                                <li>
-                                    Recent advances on neural networks: Hebbian Learning Networks, (deep) convolutional Neural
-                                    Networks, Neural Gas, (deep) recurrent Neural Networks, Multi-Layer Perception...		
-                                </li>
-                                <li>
-                                    Evolutionary Computing methods for feature selection and/or instance generation/selection
-                                </li>
-                                <li>
-                                    Implementation of Nature-inspired methods using Big Data technologies
-                                </li>
-                                <li>
-                                    Evolutionary Computing methods for Deep Learning
-                                </li>
-                            </ul>
-                        </p>
-                        <h5>Organizers</h5>
-                        <p>
-                            Dr. Eneko Osaba, TECNALIA Research and Innovation, Zamudio, Spain (Corresponding guest organizer). <a style="color:blue" href="Mailto:eneko.osaba@tecnalia.com">eneko.osaba@tecnalia.com</a>. <a href="https://scholar.google.es/citations?user=Q6P3kh4AAAAJ&amp;hl=es">Google Scholar</a>
-                        </p>
-                        <p>
-                            Prof. Dr. Javier Del Ser, University of the Basque Country (UPV/EHU) and Basque Center for Applied
-                            Mathematics (BCAM), Bilbao, Spain and TECNALIA Research and Innovation. <a style="color:blue" href="Mailto:javier.delser@ehu.es">javier.delser@ehu.es</a>.  <a href="https://scholar.google.com/citations?user=p_wY0zUAAAAJ">Google Scholar</a>
-                        </p>
-                        <p>
-                            Prof. Dr. Sancho Salcedo-Sanz, Department of Signal Processing and Communications, Universidad de Alcalá,
-                            Alcalá de Henares, Spain. <a style="color:blue" href="Mailto:sancho.salcedo@uah.es.">sancho.salcedo@uah.es.</a>.  <a href="https://scholar.google.es/citations?user=_X03BfUAAAAJ&amp;hl=es">Google Scholar</a>
-                        </p>
-                        <p>
-                            Dr. Antonio D. Masegosa, Faculty of Engineering, University of Deusto, 48007, Bilbao, Spain, and
-                            IKERBASQUE, Basque Foundation for Science, 48011, Bilbao, Spain. <a style="color:blue" href="Mailto:ad.masegosa@deusto.es..">ad.masegosa@deusto.es</a>.<a href="https://scholar.google.com/citations?user=xNqilwoAAAAJ">Google Scholar</a>
-                        </p>
-                        <h5>Brief Biographies of Session Organizers</h5>
-                        <p>
-                            <strong>Dr. Eneko Osaba</strong> works at TECNALIA as researcher in the ICT/OPTIMA area. He received the B.S. and M.S.
-                            degrees in computer sciences from the University of Deusto, Spain, in 2010 and 2011, respectively. He
-                            obtained his Ph.D. degree on Artificial Intelligence in 2015 in the same university, being the recipient of a
-                            Basque Government doctoral grant. He has participated in the proposal, development and justification of 13
-                            research projects. He has participated in the development of more than 50 papers, having 16 of them JCR
-                            Impact factor. He has performed several stays in universities of United Kingdom, Italy and Malta. He served
-                            as a member of the program and/or organizing committee in more than 10 international conferences, and he
-                            is member of the editorial board of the International Journal of Artificial Intelligence. He is an Individual
-                            Ambassador for ORCID since February 2017.
-                        </p>
-                        <p>
-                            <strong>Prof. Dr. Javier Del Ser</strong> received his first PhD in Telecommunication Engineering (Cum Laude) from the
-                            University of Navarra, Spain, in 2006, and a second PhD in Computational Intelligence (Summa Cum Laude)
-                            from the University of Alcala, Spain, in 2013. He is currently a visiting fellow at the Basque Centre for Applied
-                            Mathematics (BCAM), a part-time lecturer at the University of the Basque Country (UPV/EHU), and
-                            researcher in data analytics and optimization at TECNALIA (Spain). His research interests gravitate on the use
-                            of descriptive, prescriptive and predictive algorithms for data mining and optimization in a diverse range of
-                            application fields such as Energy, Transport, Telecommunications, Health and Industry, among others. In
-                            these fields he has published more than 190 articles, co-supervised 6 Ph.D. theses, edited 4 books, co-
-                            authored 6 patents and participated/led more than 35 research projects. He is a senior member of the IEEE.
-                        </p>
-                        <p>
-                            <strong>Prof. Dr. Sancho Salcedo-Sanz</strong> was born in Madrid, Spain, in 1974. He received the B.S. degree in physics
-                            from the Universidad Complutense de Madrid, Madrid, Spain, in 1998, and the Ph.D. degree in
-                            telecommunications engineering from the Universidad Carlos III de Madrid, Madrid, Spain, in 2002. He spent
-                            one year in the School of Computer Science, The University of Birmingham, Birmingham, U.K., as
-                            postdoctoral Research Fellow. Currently, he is an Associate Professor at the Department of Signal Processing
-                            and Communications, Universidad de Alcalá, Madrid, Spain. He has coauthored more than 230 international
-                            journal and conference papers in the field of machine learning and soft-computing. Dr. Salcedo-Sanz has
-                            received different research awards in his career, such as the Universidad de Alcalá’s Best Young Researcher
-                            award in 2009, the 3M Innovation award in 2010 and the Price of the Social Council of University of Alcalá
-                            award to technology transfer in 2011. His current interests deal with soft-computing techniques, hybrid
-                            algorithms, and neural networks in different applications of science and engineering.
-                        </p>
-                        <p>
-                            <strong>Dr. Antonio D. Masegosa</strong> took his B.E. degree in Computer Engineering in 2005 and his PhD in Computer
-                            Sciences in 2010, both from the University of Granada, Spain. From June 2010 to November 2014 he was a
-                            post-doc researcher at the Research Center for ICT of the University of Granada. In 2014 he received an
-                            IKERBASQUE Research Fellowship to work at the Mobility Unit of the Deusto Institute of Technology, in
-                            Bilbao, Spain. He has published four books, eighteen JCR papers, and more than 20 papers in both
-                            international and national conferences. He has supervised one PhD thesis and one MSc Thesis, and he is
-                            currently co-supervising two PhD theses. He has been principal investigator in one research project and he
-                            has participated in a dozen of research projects at a regional, national and international level, among them
-                            TIMON (H2020). He is member of the program committee of international conferences as IEEE CEC, GECCO,
-                            ICCCI, ECAL, HM or NICSO. He has served as reviewer in international journals as Information Sciences,
-                            Neurocomputing, Optimization Letters, European Journal of Operational Research and Memetic Computing.
+						Enrique Herrera-Viedma. Department of Computer Science and Artificial Intelligence, University of Granada, Spain. <a style="color:blue" href="Mailto:viedma@decsai.ugr.es">viedma@decsai.ugr.es</a></br>
+					</p>					
+				</td>
+			</tr>
+			<tr class="clickable icon-toogleable" data-toggle="collapse" data-target="#group-of-rows-2" aria-expanded="false" aria-controls="group-of-rows-2">
+				<!--<th><i class="fa fa-plus" aria-hidden="true"></i></th>-->
+				<td class="icon-to-toogle">
+					<a href="">Machine learning for renewable energy applications</a><i class="fa fa-level-down" aria-hidden="true"></i> 
+				</td>  
+				<td>
+					<dl class="dl-horizontal">
+						<dt>Sancho Salcedo Sanz</dt>
+						<dd>Universidad de Alcalá, Spain</dd>
+						<dt>Pedro Antonio Gutiérrez</dt>
+						<dd>University of Cordoba, Spain</dd>
+					</dl>
+				</td>
+				<td>
+					<a href="flyers/sancho.pdf"><i class="fa fa-download" aria-hidden="true"></i></a>
+				</td>
+			</tr>
+			<tr id="group-of-rows-2" class="collapse">
+				<td colspan="3">
+					<h5>Scope</h5>
+					<p>
+						In the last decade, global energy demand has increased to non-previously seen levels, mainly due to the increase in population, fierce urbanization in developed countries and aggressive industrial development all around the world. Conventional fossil-based energy sources have limited reservoirs and a deep environmental impact (contributing to global warming), and therefore they cannot satisfy this global demand for energy in a sustainable way. These issues related to fossil-based sources have led to a very important development of Renewable Energy (RE) sources in the last years, mainly in renewable technologies such as wind, solar, hydro or marine energies, among others. In this regard, Machine Learning (ML) techniques have been demonstrated to be excellent tools to cope with difficult problems arisen from new RE sources. There are many RE applications which can be tackled by ML techniques, such as prediction problems (e.g. solar radiation or significant wave height estimation), optimization algorithms (wind farm or RE devices’ design), new control techniques or fault diagnosis in RE systems, all of them with the common objective of improving significantly RE systems.
+					</p>
+					<p>
+						This special session aims to cover a wide range of works and recent advances on the application of ML techniques to RE problems. We hope that this session can provide a common forum for researchers and practitioners to exchange their ideas and report their latest finding in the area.
+					</p>
+					<h5>Topics</h5>
+					<p>
+						In particular we encourage submissions addressing the following issues: 
+						<ul>
+							<li>Wind speed prediction problems.</li>
+							<li>Solar radiation prediction problems.</li>
+							<li>Wave height estimation problems.</li>
+							<li>RE Power prediction.</li>
+							<li>Fault diagnosis in RE-related systems.</li>
+							<li>Power quality disturbance detection and analysis.</li>
+							<li>Appliance Load Monitoring applications.</li>
+							<li>Any application of ML techniques to RE problems.</li>
+						</ul>
+					</p>
+					<h5>Organizers</h5>
+					<p>
+						Sancho Salcedo Sanz, Associate Professor, Universidad de Alcalá. <a style="color:blue" href="Mailto:sancho.salcedo@uah.es">sancho.salcedo@uah.es</a></br>
+						Pedro Antonio Gutiérrez, Dept. of Computer Science and Numerical Analysis, University of Cordoba, Spain. <a style="color:blue" href="Mailto:pagutierrez@uco.es">pagutierrez@uco.es</a></br></br>
+					</p>
+				</td>
+			</tr>
+			<tr class="clickable icon-toogleable" data-toggle="collapse" data-target="#group-of-rows-3" aria-expanded="false" aria-controls="group-of-rows-3">
+				<!--<th><i class="fa fa-plus" aria-hidden="true"></i></th>-->
+				<td class="icon-to-toogle">
+					<a href="">Evolutionary Computing Methods for Data Mining: Theory and Applications</a><i class="fa fa-level-down" aria-hidden="true"></i> 
+				</td>  
+				<td>
+					<dl class="dl-horizontal">
+						<dt>Eneko Osaba</dt>
+						<dd>TECNALIA Research and Innovaton, Spain</dd>
+						<dt>Javier Del Ser</dt>
+						<dd>University of the Basque Country, Spain</dd>
+						<dt>Sancho Salcedo-Sanz</dt>
+						<dd>University of Alcalá, Spain</dd>
+						<dt>Antonio D. Masegosa</dt>
+						<dd>University of Deusto, Spain</dd>
+					</dl>
+				</td>
+				<td>
+					<a href="flyers/delser.pdf"><i class="fa fa-download" aria-hidden="true"></i></a>
+				</td>
+			</tr>
+			<tr id="group-of-rows-3" class="collapse">
+				<td colspan="3">
+					<p>
+						Evolutionary Computation has a great popularity in the current scientific community, being the focus scope
+						of many research contributions in the literature year by year. The rationale behind the acquired momentum
+						by this broad family of methods lies on their outstanding performance evinced in hundreds of research fields
+						and problem instances. In this regard many different inspirational sources can be found for these solvers,
+						such as the behavioral patterns of ants or swarms of particles, as well as the mechanisms behind genetic
+						inheritance and brain connections. Furthermore, this type of techniques is being applied to a wide range of
+						problems and areas of knowledge, such as transportation, medicine or industry. The proposed special session
+						is focused on the development of Evolutionary Computing methods and their application to data mining,
+						data science and big data. More specifically, we will analyze the latest theoretical advances on the use of this
+						kind of techniques in any of the aspects and processes related with data science, as well as the latest real-
+						world applications regarding this topic.
+					</p>
+					<p>
+						This Special Session to be held during IDEAL2018 has as objective to bring researchers and experts together
+						to discuss and share their experiences. The session will provide a platform to share the current and new
+						research topics and ideas, increasing international collaborations researchers. The topics of interest include,
+						but are not limited to:
+						<ul>
+							<li>Data mining, Data science and Big Data.</li>
+							<li>Recent advances on nature inspired methods for data science, with emphasis on those inspired by
+								biological processes and behaviors typically observed in Nature, such as Particle Swarm Optimization, Ant
+								Colony and Genetic Algorithms.
+							</li>
+							<li>
+								Novel applications of evolutionary computing methods to data mining, with priority on real-world
+								scenarios.							
+							</li>
+							<li>
+								Nature-inspired heuristics, Evolutionary Algorithms, Swarm Intelligence, Hyper Heuristics, Memetic
+								Computing, and Distributed Evolutionary Techniques.
+							</li>
+							<li>
+								Evolutionary Computing methods for supervised and unsupervised data mining
+							</li>
+							<li>
+								Combining/Hybridizing Evolutionary Computing techniques with machine learning and data mining
+								techniques.
+							</li>
+							<li>
+								Recent advances on neural networks: Hebbian Learning Networks, (deep) convolutional Neural
+								Networks, Neural Gas, (deep) recurrent Neural Networks, Multi-Layer Perception...		
+							</li>
+							<li>
+								Evolutionary Computing methods for feature selection and/or instance generation/selection
+							</li>
+							<li>
+								Implementation of Nature-inspired methods using Big Data technologies
+							</li>
+							<li>
+								Evolutionary Computing methods for Deep Learning
+							</li>
+						</ul>
+					</p>
+					<h5>Organizers</h5>
+					<p>
+						Dr. Eneko Osaba, TECNALIA Research and Innovation, Zamudio, Spain (Corresponding guest organizer). <a style="color:blue" href="Mailto:eneko.osaba@tecnalia.com">eneko.osaba@tecnalia.com</a>. <a href="https://scholar.google.es/citations?user=Q6P3kh4AAAAJ&amp;hl=es">Google Scholar</a>
+					</p>
+					<p>
+						Prof. Dr. Javier Del Ser, University of the Basque Country (UPV/EHU) and Basque Center for Applied
+						Mathematics (BCAM), Bilbao, Spain and TECNALIA Research and Innovation. <a style="color:blue" href="Mailto:javier.delser@ehu.es">javier.delser@ehu.es</a>.  <a href="https://scholar.google.com/citations?user=p_wY0zUAAAAJ">Google Scholar</a>
+					</p>
+					<p>
+						Prof. Dr. Sancho Salcedo-Sanz, Department of Signal Processing and Communications, Universidad de Alcalá,
+						Alcalá de Henares, Spain. <a style="color:blue" href="Mailto:sancho.salcedo@uah.es.">sancho.salcedo@uah.es.</a>.  <a href="https://scholar.google.es/citations?user=_X03BfUAAAAJ&amp;hl=es">Google Scholar</a>
+					</p>
+					<p>
+						Dr. Antonio D. Masegosa, Faculty of Engineering, University of Deusto, 48007, Bilbao, Spain, and
+						IKERBASQUE, Basque Foundation for Science, 48011, Bilbao, Spain. <a style="color:blue" href="Mailto:ad.masegosa@deusto.es..">ad.masegosa@deusto.es</a>.<a href="https://scholar.google.com/citations?user=xNqilwoAAAAJ">Google Scholar</a>
+					</p>
+					<h5>Brief Biographies of Session Organizers</h5>
+					<p>
+						<strong>Dr. Eneko Osaba</strong> works at TECNALIA as researcher in the ICT/OPTIMA area. He received the B.S. and M.S.
+						degrees in computer sciences from the University of Deusto, Spain, in 2010 and 2011, respectively. He
+						obtained his Ph.D. degree on Artificial Intelligence in 2015 in the same university, being the recipient of a
+						Basque Government doctoral grant. He has participated in the proposal, development and justification of 13
+						research projects. He has participated in the development of more than 50 papers, having 16 of them JCR
+						Impact factor. He has performed several stays in universities of United Kingdom, Italy and Malta. He served
+						as a member of the program and/or organizing committee in more than 10 international conferences, and he
+						is member of the editorial board of the International Journal of Artificial Intelligence. He is an Individual
+						Ambassador for ORCID since February 2017.
+					</p>
+					<p>
+						<strong>Prof. Dr. Javier Del Ser</strong> received his first PhD in Telecommunication Engineering (Cum Laude) from the
+						University of Navarra, Spain, in 2006, and a second PhD in Computational Intelligence (Summa Cum Laude)
+						from the University of Alcala, Spain, in 2013. He is currently a visiting fellow at the Basque Centre for Applied
+						Mathematics (BCAM), a part-time lecturer at the University of the Basque Country (UPV/EHU), and
+						researcher in data analytics and optimization at TECNALIA (Spain). His research interests gravitate on the use
+						of descriptive, prescriptive and predictive algorithms for data mining and optimization in a diverse range of
+						application fields such as Energy, Transport, Telecommunications, Health and Industry, among others. In
+						these fields he has published more than 190 articles, co-supervised 6 Ph.D. theses, edited 4 books, co-
+						authored 6 patents and participated/led more than 35 research projects. He is a senior member of the IEEE.
+					</p>
+					<p>
+						<strong>Prof. Dr. Sancho Salcedo-Sanz</strong> was born in Madrid, Spain, in 1974. He received the B.S. degree in physics
+						from the Universidad Complutense de Madrid, Madrid, Spain, in 1998, and the Ph.D. degree in
+						telecommunications engineering from the Universidad Carlos III de Madrid, Madrid, Spain, in 2002. He spent
+						one year in the School of Computer Science, The University of Birmingham, Birmingham, U.K., as
+						postdoctoral Research Fellow. Currently, he is an Associate Professor at the Department of Signal Processing
+						and Communications, Universidad de Alcalá, Madrid, Spain. He has coauthored more than 230 international
+						journal and conference papers in the field of machine learning and soft-computing. Dr. Salcedo-Sanz has
+						received different research awards in his career, such as the Universidad de Alcalá’s Best Young Researcher
+						award in 2009, the 3M Innovation award in 2010 and the Price of the Social Council of University of Alcalá
+						award to technology transfer in 2011. His current interests deal with soft-computing techniques, hybrid
+						algorithms, and neural networks in different applications of science and engineering.
+					</p>
+					<p>
+						<strong>Dr. Antonio D. Masegosa</strong> took his B.E. degree in Computer Engineering in 2005 and his PhD in Computer
+						Sciences in 2010, both from the University of Granada, Spain. From June 2010 to November 2014 he was a
+						post-doc researcher at the Research Center for ICT of the University of Granada. In 2014 he received an
+						IKERBASQUE Research Fellowship to work at the Mobility Unit of the Deusto Institute of Technology, in
+						Bilbao, Spain. He has published four books, eighteen JCR papers, and more than 20 papers in both
+						international and national conferences. He has supervised one PhD thesis and one MSc Thesis, and he is
+						currently co-supervising two PhD theses. He has been principal investigator in one research project and he
+						has participated in a dozen of research projects at a regional, national and international level, among them
+						TIMON (H2020). He is member of the program committee of international conferences as IEEE CEC, GECCO,
+						ICCCI, ECAL, HM or NICSO. He has served as reviewer in international journals as Information Sciences,
+						Neurocomputing, Optimization Letters, European Journal of Operational Research and Memetic Computing.
 
-                            His main research interests are the application of Artificial Intelligent techniques to Intelligent Transportation
-                            Systems, especially metaheuristics and fuzzy systems.
-                        </p>
-                    </td>
-                </tr>			
-            </tbody>
-        </table>
-    </div>
-    <div class="content" id="bestPaperAwards">
-        <h2 class="mt-4">Best Paper Awards</h2>
-        <p>
-            TBD
-        </p>
-    </div>
+						His main research interests are the application of Artificial Intelligent techniques to Intelligent Transportation
+						Systems, especially metaheuristics and fuzzy systems.
+					</p>
+				</td>
+			</tr>			
+		</tbody>
+	</table>
+</div>
+<div class="content" id="bestPaperAwards">
+	<h2 class="mt-4">Best Paper Awards</h2>
+	<p>
+		TBD
+	</p>
+</div>
 </html>
