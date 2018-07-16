@@ -76,17 +76,57 @@
 			</p>
 		</div>
 		<div class="media-body">
-			<h3>Title: TBD</h3>
+			<h3>Statistical and Algorithmic Learning?</h3>
 			<h5 class="mt-0">Abstract</h5>
 			<p>
-				TBD
+				Let’s assume that the training set of our data follows the assumption of ran-
+				domness - the examples are independent and identically distributed (i.i.d.). That is our only assumption and we want to check out if a new example follows this i.i.d. assumption. To estimate if the new example is a ”typical” or ”strange” in some sense example (or how well it fits or conforms to the training set distribution), we need to define a strangeness (non-conformity) measure (NCM). To make a prediction or to estimate a confidence of
+				prediction we can convert our NCMs into statistical p-values using the M − Lof test for randomness. The highest p-value gives us a prediction and the (1 - 2nd highest p-value) gives us a confidence in the prediction. The learning machines based on these ideas is called conformal predictors (CP) and has a number of advantages over
+				the conventional machine learning algorithms. In particular, CPs can be used
+				in connection with any machine learning algorithms (support vector machine,
+				deep learning, kernel methods, random trees, etc.): we extract our measure of
+				non-conformity from the underlying machine learning algorithm and use it in
+				our calculations of p-values. It also connects a confidence with accuracy of the
+				prediction. In other words, unlike in the classical machine learning algorithms,
+				we can control a number of errors by setting up a required confidence level. In
+				the online mode, we can also prove that CPs are well-calibrated in the sense that
+				the probability of error at every step is  and errors are made independently
+				at different trials. In combination with the law of large numbers, this implies
+				validity property: the long-run percentage of the erroneous predictions will be
+				close, with high probability, to the chosen significance level.
+			</p>
+			<p>
+				The talk also considers an application of Conformal Predictors to several
+
+				problems in different fields. In particular, we consider a chemo-informatics prob-
+				lem of identifying activities of compounds. The paper addresses some specific
+
+				challenges of this domain: a large number of compounds (training examples), high-dimensionality of feature space, sparseness and a strong class imbalance. A
+				variant of conformal predictors called Inductive Mondrian Conformal Predictor
+
+				is applied to deal with these challenges. Results are presented for several non-
+				conformity measures (NCM) extracted from underlying algorithms and different
+
+				kernels. A number of performance measures are used in order to demonstrate
+				the flexibility of Inductive Mondrian Conformal Predictors in dealing with such
+				a complex set of data.
 			</p>
 			<h5>Short bio.</h5>
 			<p>
-				Professor Gammerman is a Fellow of the Royal Statistical Society and Fellow of the Royal Society of Arts. He chaired and participated in organising committees of many international conferences and workshops on Machine Learning and Bayesian methods in Europe, Russia and in the United States. He was also a member of the editorial boards of the Law, Probability and Risk journal (2002-2009) and the Computer Journal (2003-2008).
+				<b>Alexander Gammerman</b> is Professor of Computer Science and co-Director
+				of Computer Learning Research Centre at Royal Holloway, University of London.
+				He is Fellow of the Royal Statistical Society and BCS. He has worked as Visiting
+				Professor in Columbia University, New York, University of Paris 9, Complutense
+				University of Madrid and University College London.
 			</p>
 			<p>
-				Professor Gammerman's current research interest lies in application of algorithmic randomness theory to machine learning and, in particular, to the development of confidence machines (conformal predictors). Areas in which these techniques have been applied include medical diagnosis, drug design, forensic science, proteomics, genomics, environment and information security. Professor Gammerman has published about two hundred research papers and several books on computational learning and probabilistic inference
+				Professor Gammerman’s research interests lie in pattern recognition, Bayesian
+				inference and machine learning. He has published about two hundred research
+				papers and 9 books on computational learning and probabilistic inference. The
+				fundamental theoretical research in machine learning has established a basis
+				for practical applications. The applications includes medicine, neurosciences,
+				chemo-informatics, information security, bioinformatics and other fields with
+				major grants from EU, UK Research Councils and industry.
 			</p>
 		</div>
 	</div>
