@@ -397,4 +397,6 @@ body {
  ****************************************/
 #scam-panel {
     top: 56px;
+    overflow-y: scroll;
+    max-height: 90vh;
 }
