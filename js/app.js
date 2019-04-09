@@ -3,8 +3,8 @@ var app = angular.module('ideal2018', ['ui.router', 'ngSanitize']);
 
 //Constants
 app.constant('CONSTANTS', {
-    CAROUSEL_TITLE: "The 19th International Conference on Intelligent Data Engineering and Automated Learning </br> IDEAL 2018",
-    DATE_PLACE: "21-23 November, Madrid, Spain"
+    CAROUSEL_TITLE: "The next edition of IDEAL conference will be hosted on Manchester (UK).",
+    DATE_PLACE: "Please check all the information on our new website: http://www.confercare.manchester.ac.uk/events/ideal2019/"
 });
 
 //Assign constants to root scope
